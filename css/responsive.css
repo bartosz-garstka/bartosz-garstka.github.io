@@ -66,11 +66,10 @@
     .skills .p_small{
         padding-top: 4px;
     }
-    .projects-container{
+    .projects{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 16px;
-        padding-top: 8px;
     }
     .project{
         padding: 16px;
