@@ -20,6 +20,7 @@
 .navbar .menu-list{
     position: absolute;
     top:100%; left:0; right:0;
+    padding: 16px;
     background: var(--color-surface);
     border-top: var(--outline-primary);
     border-bottom: var(--outline-primary);
@@ -47,10 +48,11 @@
     .about .image{
         padding-top: 16px;
     }
-    .skills{
+    .skills__container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 16px;
+        padding-top: 16px;
     }
     .skills .card{
         padding: 16px;
@@ -66,10 +68,11 @@
     .skills .p_small{
         padding-top: 4px;
     }
-    .projects{
+    .projects__container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 16px;
+        padding-top: 16px;
     }
     .project{
         padding: 16px;
@@ -100,173 +103,541 @@
     .footer .sm__container{
         padding-top: 8px;
     }
-    
 }
   
 @media only screen and (orientation: landscape) and (min-width: 568px) and (max-width: 927px) {
     section, footer{
-        padding: 48px 6%;
-        border-bottom: var(--outline-test);
+        padding: 32px 6%; 
     }
     .header{
-        padding: 8px 6%;    
+        padding: 8px 6%; 
+    }
+    .navbar .menu-list{
+        padding: 16px 6%;
+    }
+    
+    .about .p_large{
+        padding-top: 8px;
+    }
+    .about .p_medium{
+        padding-top: 16px;
     }
     .about .image{
         display: none;
     }
-}
-  
-/* Tablet devices */
-@media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px) {
-
-}
-
-@media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px) {
-
-}
-  
-/* Laptop devices */
-@media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1440px) {
-
-}
-
-/* TVs devices */
-@media only screen and (orientation: portrait) and (min-width: 1025px) {
-
-}
-
-@media only screen and (orientation: landscape) and (min-width: 1441px) {
-    .header{
-        position: sticky;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 20%;
-        border-bottom: var(--outline-primary);
-        background-color: var(--color-surface);
-        z-index: 999;
-    }
-    
-    .header .header__button{
-        display: flex;
-        gap: 16px;
-        align-items: center;
-    }
-    .header .menu-list{
-        display: flex;
-        gap: 16px;
-    }
-    .header .toggle__lang{
-        padding: 8px 16px;
-        border: var(--outline-primary);
-       
-    }
-    .header .toggle__lang:hover{
-        background-color: var(--color-surface-variant);
-    }
-    .header .btn-secondary{
-        display: flex;
-        gap: 8px;
-        padding: 8px 16px;
-        color: var(--color-on_surface);
-        border: var(--outline-primary);
-    }
-    .header .btn-secondary:hover{
-        background-color: var(--color-surface-variant);
-    }
-    .header .btn-icon{
-        stroke: var(--color-on_surface);
-    }
-
-    .about{
+    .skills__container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 32px;
-        align-items: center;
-       
-        padding: 64px 20%;
-        border-bottom: var(--outline-primary);
+        column-gap: 16px;
+        row-gap: 16px;
+        padding-top: 16px;
     }
-    .about .content{
-        align-self: center;
-    }
-    .about .content h4{
-        margin-top: 16px;
-    }
-    .about .content p{
-        margin-top: 32px;
-    }
-    .about .image{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .skills{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 32px;
-        row-gap: 32px;
-        padding: 64px 20%;
-    }
-     .skills .card{
+    .skills .card{
         padding: 16px;
         border: var(--outline-primary);
     }
-    .skills .card p{
-        margin-top: 8px;
+    .skills .card svg{
+        height: 32px;
+        width: 32px;
     }
-
-    .projects{
-        padding: 64px 20%;
+    .skills .card__content{
+        padding-top: 8px;
     }
-    .projects-container{
+    .skills .p_small{
+        padding-top: 4px;
+    }
+    .projects__container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 32px;
-        
-        margin-top: 32px;
+        column-gap: 16px;
+        row-gap: 16px;
+        padding-top: 16px;
     }
     .project{
         padding: 16px;
         border: var(--outline-primary);
     }
-    .project .content__heading{
-        margin-top: 16px;
+    .project h3{
+        padding-top: 8px;
     }
-    .project .content__badges{
+    .project .badges{
         display: flex;
-        gap: 16px;
-        margin-top: 8px;
+        gap: 8px;
+        padding-top: 8px;
     }
-    .badge{
-        padding: 2px 8px;
+    .project svg{
+        width: 200;
+        height: 200;
+        fill: var(--color-surface-variant);
+        background-color: var(--color-surface-variant);
     }
-    .badge--1{
-        background-color: lightsalmon;
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
     }
-    .badge--2{
-        background-color: lightgreen;
+    .footer .p_small{
+        padding-top: 8px;
     }
-    .badge--3{
-        background-color: lightskyblue;
+    .footer .sm__container{
+        padding-top: 8px;
+    }
+}
+  
+/* Tablet devices */
+@media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px) {
+    section, footer{
+        padding: 64px 8%; 
+    }
+    .header{
+        padding: 12px 8%; 
+    }
+    .navbar .menu-list{
+        padding: 16px 8%;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+    }
+    .about .p_large{
+        padding-top: 12px;
+    }
+    .about .p_medium{
+        padding-top: 24px;
+    }
+    .about .image{
+        display: block;
+    }
+    .skills__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+        padding-top: 24px;
+    }
+    .skills .card{
+        padding: 24px;
+        border: var(--outline-primary);
+    }
+    .skills .card svg{
+        height: 32px;
+        width: 32px;
+    }
+    .skills .card__content{
+        padding-top: 12px;
+    }
+    .skills .p_small{
+        padding-top: 4px;
+    }
+    .projects__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+        padding-top: 24px;
+    }
+    .project{
+        padding: 24px;
+        border: var(--outline-primary);
+    }
+    .project h3{
+        padding-top: 12px;
+    }
+    .project .badges{
+        display: flex;
+        gap: 8px;
+        padding-top: 12px;
+    }
+    .project svg{
+        width: 200;
+        height: 200;
+        fill: var(--color-surface-variant);
+        background-color: var(--color-surface-variant);
     }
     .footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 32px;
-        padding: 64px 20%;
-        border-top: var(--outline-primary);
     }
-    
-    .footer .sm__linkedin{
-        display: inline-block;
-        padding: 3.5px 7px;
+    .footer .p_small{
+        padding-top: 12px;
+    }
+    .footer .sm__container{
+        padding-top: 12px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px) {
+    section, footer{
+        padding: 64px 8%; 
+    }
+    .header{
+        padding: 12px 8%; 
+    }
+    .navbar .menu-list{
+        position: inherit;
+        display: flex;
+        padding: 0px;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        clip-path: none;
+        transition: none;   
+    }
+    .header__button #toggle__menu{
+        display: none;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+    }
+    .about .p_large{
+        padding-top: 12px;
+    }
+    .about .p_medium{
+        padding-top: 24px;
+    }
+    .about .image{
+        display: block;
+    }
+    .skills__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+        padding-top: 24px;
+    }
+    .skills .card{
+        padding: 24px;
         border: var(--outline-primary);
     }
-    .footer .sm__linkedin:hover{
+    .skills .card svg{
+        height: 32px;
+        width: 32px;
+    }
+    .skills .card__content{
+        padding-top: 12px;
+    }
+    .skills .p_small{
+        padding-top: 4px;
+    }
+    .projects__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+        padding-top: 24px;
+    }
+    .project{
+        padding: 24px;
+        border: var(--outline-primary);
+    }
+    .project h3{
+        padding-top: 12px;
+    }
+    .project .badges{
+        display: flex;
+        gap: 8px;
+        padding-top: 12px;
+    }
+    .project svg{
+        width: 200;
+        height: 200;
+        fill: var(--color-surface-variant);
         background-color: var(--color-surface-variant);
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+    }
+    .footer .p_small{
+        padding-top: 12px;
+    }
+    .footer .sm__container{
+        padding-top: 12px;
+    }
+}
+  
+/* Laptop devices */
+@media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1440px) {
+    section, footer{
+        padding: 64px 12%; 
+    }
+    .header{
+        padding: 12px 12%; 
+    }
+    .navbar .menu-list{
+        position: inherit;
+        display: flex;
+        padding: 0px;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        clip-path: none;
+        transition: none;   
+    }
+    .header__button #toggle__menu{
+        display: none;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 48px;
+    }
+    .about .p_large{
+        padding-top: 16px;
+    }
+    .about .p_medium{
+        padding-top: 32px;
+    }
+    .about .image{
+        display: block;
+    }
+    .skills__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 32px;
+        row-gap: 32px;
+        padding-top: 32px;
+    }
+    .skills .card{
+        padding: 32px;
+        border: var(--outline-primary);
+    }
+    .skills .card svg{
+        height: 32px;
+        width: 32px;
+    }
+    .skills .card__content{
+        padding-top: 16px;
+    }
+    .skills .p_small{
+        padding-top: 8px;
+    }
+    .projects__container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 32px;
+        row-gap: 32px;
+        padding-top: 32px;
+    }
+    .project{
+        padding: 32px;
+        border: var(--outline-primary);
+    }
+    .project h3{
+        padding-top: 16px;
+    }
+    .project .badges{
+        display: flex;
+        gap: 12px;
+        padding-top: 16px;
+    }
+    .project svg{
+        width: 200;
+        height: 200;
+        fill: var(--color-surface-variant);
+        background-color: var(--color-surface-variant);
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+    }
+    .footer .p_small{
+        padding-top: 16px;
+    }
+    .footer .sm__container{
+        padding-top: 16px;
+    }
+}
+
+/* TVs devices */
+@media only screen and (orientation: portrait) and (min-width: 1025px) {
+    section, footer{
+        padding: 64px 16%; 
+    }
+    .header{
+        padding: 12px 16%; 
+    }
+    .navbar .menu-list{
+        position: inherit;
+        display: flex;
+        padding: 0px;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        clip-path: none;
+        transition: none;   
+    }
+    .header__button #toggle__menu{
+        display: none;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 64px;
+    }
+    .about .p_large{
+        padding-top: 16px;
+    }
+    .about .p_medium{
+        padding-top: 32px;
+    }
+    .about .image{
+        display: block;
+    }
+    .skills__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+        row-gap: 32px;
+        padding-top: 32px;
+    }
+    .skills .card{
+        padding: 32px;
+        border: var(--outline-primary);
+    }
+    .skills .card svg{
+        height: 32px;
+        width: 32px;
+    }
+    .skills .card__content{
+        padding-top: 16px;
+    }
+    .skills .p_small{
+        padding-top: 8px;
+    }
+    .projects__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+        row-gap: 32px;
+        padding-top: 32px;
+    }
+    .project{
+        padding: 32px;
+        border: var(--outline-primary);
+    }
+    .project h3{
+        padding-top: 16px;
+    }
+    .project .badges{
+        display: flex;
+        gap: 12px;
+        padding-top: 16px;
+    }
+    .project svg{
+        width: 200;
+        height: 200;
+        fill: var(--color-surface-variant);
+        background-color: var(--color-surface-variant);
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 64px;
+    }
+    .footer .p_small{
+        padding-top: 16px;
+    }
+    .footer .sm__container{
+        padding-top: 16px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1441px) {
+    section, footer{
+        padding: 64px 16%; 
+    }
+    .header{
+        padding: 12px 16%; 
+    }
+    .navbar .menu-list{
+        position: inherit;
+        display: flex;
+        padding: 0px;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        clip-path: none;
+        transition: none;   
+    }
+    .header__button #toggle__menu{
+        display: none;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 64px;
+    }
+    .about .p_large{
+        padding-top: 16px;
+    }
+    .about .p_medium{
+        padding-top: 32px;
+    }
+    .about .image{
+        display: block;
+    }
+    .skills__container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 32px;
+        row-gap: 32px;
+        padding-top: 32px;
+    }
+    .skills .card{
+        padding: 32px;
+        border: var(--outline-primary);
+    }
+    .skills .card svg{
+        height: 32px;
+        width: 32px;
+    }
+    .skills .card__content{
+        padding-top: 16px;
+    }
+    .skills .p_small{
+        padding-top: 8px;
+    }
+    .projects__container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 32px;
+        row-gap: 32px;
+        padding-top: 32px;
+    }
+    .project{
+        padding: 32px;
+        border: var(--outline-primary);
+    }
+    .project h3{
+        padding-top: 16px;
+    }
+    .project .badges{
+        display: flex;
+        gap: 12px;
+        padding-top: 16px;
+    }
+    .project svg{
+        width: 200;
+        height: 200;
+        fill: var(--color-surface-variant);
+        background-color: var(--color-surface-variant);
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 64px;
+    }
+    .footer .p_small{
+        padding-top: 16px;
+    }
+    .footer .sm__container{
+        padding-top: 16px;
     }
 }

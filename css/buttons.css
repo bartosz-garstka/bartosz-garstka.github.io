@@ -18,7 +18,7 @@
     border: var(--outline-primary);
     cursor: pointer;
 }
-.button-icon-secondary:hover{
+.button-icon-secondary.active:hover{
     background-color: var(--color-surface-variant);
 }
 

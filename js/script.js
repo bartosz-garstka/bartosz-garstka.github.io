@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.onscroll = () =>{
     navbar.classList.remove('active');
-    }
+    };
     
 });
 
