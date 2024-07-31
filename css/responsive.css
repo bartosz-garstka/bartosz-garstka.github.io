@@ -35,8 +35,8 @@
 /* Mobile devices */
 @media only screen and (orientation: portrait) and (max-width: 480px) {
     section, footer{
-        padding: 16px 4%;
-        border-bottom: var(--outline-test);
+        padding: 32px 4%;
+        
     }
     .about .p_large{
         padding-top: 8px;
