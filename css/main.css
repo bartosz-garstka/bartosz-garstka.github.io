@@ -1,0 +1,29 @@
+@import url('/css/reset.css');
+@import url('/css/theme.css');
+@import url('/css/fonts.css');
+@import url('/css/typography.css');
+@import url('/css/buttons.css');
+@import url('/css/responsive.css');
+@import url('/css/project-1.css');
+
+html,
+body { 
+    scroll-behavior: smooth;
+    background-color: var(--color-surface);
+}
+
+html::-webkit-scrollbar {
+    width: 6px;
+}
+  
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
+a:hover{
+    color: var(--color-primary);
+}

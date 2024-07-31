@@ -1,0 +1,89 @@
+:root {
+    --color-basic-on_surface:#FFFFFF;
+
+    --default-transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out, fill .2s ease-in-out, stroke .2s ease-in-out, transform .2s ease-in-out;
+}
+
+html[data-theme='light'] {
+    /* colors */
+    --color-primary: #BD162C;
+    --color-on_primary: #FFFFFF;
+
+    --color-secondary: #0A0A0A;
+    --color-on_secondary: #FFFFFF;
+
+    --color-surface: #FFFFFF;
+    --color-surface-variant: #E8E8E8;
+
+    --color-on_surface: #0A0A0A;
+    --color-on_surface-variant: #333333;
+
+    --color-outline-primary: #C4C4C4;
+
+    /* outline */
+    --outline-primary: 1px solid #C4C4C4;
+    --outline-test: 2px solid var(--color-primary);
+
+    /* shadows */
+    --elevation-shadow-primary: 0 0.5px 1px 0 rgba(35,34,34,0.1);
+    --elevation-shadow-secondary:0 4pt 8pt rgba(35,34,34,0.2);
+
+    /* transitions */
+    --switch-theme-position: 0.25rem;
+}
+
+html[data-theme='dark'] {
+    /* colors */
+    --color-primary: #BD162C;
+    --color-on_primary: #FFFFFF;
+
+    --color-secondary:#FFFFFF ;
+    --color-on_secondary:#0A0A0A;
+
+    --color-surface: #0A0A0A;
+    
+    --color-surface-variant: #1C1C1C;
+
+    --color-on_surface:#FFFFFF;
+    --color-on_surface-variant:#C4C4C4;
+
+    --color-outline-primary:#333333;
+    
+    /* outline */
+    --outline-primary: 1px solid #333333;
+
+    /* shadows */
+    --elevation-shadow-primary: 0 0.5pt 1pt 0 rgba:(35,34,34,0.1);
+    --elevation-shadow-secondary: 0 4pt 8pt 0 rgba:(35,34,34,0.2);
+
+    /* transitions */
+    --switch-theme-position: 2.75rem;
+}
+
+#theme-toggle{
+    background: none;
+    border: none;
+}
+
+#theme-toggle:hover{
+    background-color: var(--color-surface-variant);
+}
+
+#icon-sun, #icon-moon {   
+    fill: none;
+    stroke: var(--color-on_surface);
+    stroke-width: 1.5;
+    transition: opacity 0.5s ease;
+    stroke-dasharray: 1000; /* Ustaw odpowiednią wartość, większą niż długość ścieżki */
+    stroke-dashoffset: 1000;
+    animation: draw 7s linear forwards;
+}
+
+@keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+
+
+
