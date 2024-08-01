@@ -39,6 +39,11 @@
         padding: 32px 4%;
         
     }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 16px;
+    }
     .about .p_large{
         padding-top: 8px;
     }
@@ -47,6 +52,9 @@
     }
     .about .image{
         padding-top: 16px;
+        width: 75%;
+        height: 75%;
+        justify-self: center;
     }
     .skills__container{
         display: grid;
@@ -582,10 +590,13 @@
     }
     .about .image{
         display: block;
+        width: 400px;
+        justify-self: center;
+        object-fit: cover;
     }
     .skills__container{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 32px;
         row-gap: 32px;
         padding-top: 32px;
