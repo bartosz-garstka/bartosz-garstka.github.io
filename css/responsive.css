@@ -1,3 +1,7 @@
+section, footer{
+    padding: 32px 4%;  
+}
+
 .header{
     position: sticky;
     top: 0;
@@ -33,93 +37,94 @@
 .navbar .menu-list li{
     padding: 12px 16px;
 }
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 16px;
+}
+.about .p_large{
+    padding-top: 8px;
+}
+.about .p_medium{
+    padding-top: 16px;
+}
+.about .image{
+    padding-top: 16px;
+    width: 75%;
+    height: 75%;
+    justify-self: center;
+}
+
+.skills__container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 16px;
+    padding-top: 16px;
+}
+.skills .card{
+    padding: 16px;
+    border: var(--outline-primary);
+}
+.skills .card svg{
+    height: 32px;
+    width: 32px;
+}
+.skills .card__content{
+    padding-top: 8px;
+}
+.skills .p_small{
+    padding-top: 4px;
+}
+
+.projects__container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 16px;
+    padding-top: 16px;
+}
+.project{
+    padding: 16px;
+    border: var(--outline-primary);
+}
+.project h3{
+    padding-top: 8px;
+}
+.project .badges{
+    display: flex;
+    gap: 8px;
+    padding-top: 8px;
+}
+.project svg{
+    width: 200;
+    height: 200;
+    fill: var(--color-surface-variant);
+    background-color: var(--color-surface-variant);
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+}
+.footer .p_small{
+    padding-top: 8px;
+}
+.footer .sm__container{
+    padding-top: 8px;
+}
 .footer__sm .button-icon-secondary{
     display: inline-block;
 }
 /* Mobile devices */
 @media only screen and (orientation: portrait) and (max-width: 480px) {
-    section, footer{
-        padding: 32px 4%;
-        
-    }
-    .about{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        row-gap: 16px;
-    }
-    .about .p_large{
-        padding-top: 8px;
-    }
-    .about .p_medium{
-        padding-top: 16px;
-    }
-    .about .image{
-        padding-top: 16px;
-        width: 75%;
-        height: 75%;
-        justify-self: center;
-    }
-    .skills__container{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 16px;
-        padding-top: 16px;
-    }
-    .skills .card{
-        padding: 16px;
-        border: var(--outline-primary);
-    }
-    .skills .card svg{
-        height: 32px;
-        width: 32px;
-    }
-    .skills .card__content{
-        padding-top: 8px;
-    }
-    .skills .p_small{
-        padding-top: 4px;
-    }
-    .projects__container{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 16px;
-        padding-top: 16px;
-    }
-    .project{
-        padding: 16px;
-        border: var(--outline-primary);
-    }
-    .project h3{
-        padding-top: 8px;
-    }
-    .project .badges{
-        display: flex;
-        gap: 8px;
-        padding-top: 8px;
-    }
-    .project svg{
-        width: 200;
-        height: 200;
-        fill: var(--color-surface-variant);
-        background-color: var(--color-surface-variant);
-    }
-    .footer{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 16px;
-    }
-    .footer .p_small{
-        padding-top: 8px;
-    }
-    .footer .sm__container{
-        padding-top: 8px;
-    }
 }
   
 @media only screen and (orientation: landscape) and (min-width: 568px) and (max-width: 927px) {
     section, footer{
         padding: 32px 6%; 
     }
+
     .header{
         padding: 8px 6%; 
     }
@@ -136,6 +141,7 @@
     .about .image{
         display: none;
     }
+
     .skills__container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -157,6 +163,7 @@
     .skills .p_small{
         padding-top: 4px;
     }
+
     .projects__container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -182,6 +189,7 @@
         fill: var(--color-surface-variant);
         background-color: var(--color-surface-variant);
     }
+    
     .footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -196,7 +204,7 @@
 }
   
 /* Tablet devices */
-@media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px){
     section, footer{
         padding: 64px 8%; 
     }
@@ -278,11 +286,12 @@
         padding-top: 12px;
     }
 }
-
-@media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px) {
+/* Tablet devices */
+@media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px){
     section, footer{
         padding: 64px 8%; 
     }
+
     .header{
         padding: 12px 8%; 
     }
@@ -299,6 +308,7 @@
     .header__button #toggle__menu{
         display: none;
     }
+
     .about{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -313,6 +323,7 @@
     .about .image{
         display: block;
     }
+
     .skills__container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -334,6 +345,7 @@
     .skills .p_small{
         padding-top: 4px;
     }
+
     .projects__container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -359,6 +371,7 @@
         fill: var(--color-surface-variant);
         background-color: var(--color-surface-variant);
     }
+
     .footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -372,11 +385,12 @@
     }
 }
   
-/* Laptop devices */
-@media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1440px) {
+/* Large devices */
+@media only screen and (orientation: portrait) and (min-width: 1025px) {
     section, footer{
         padding: 64px 12%; 
     }
+
     .header{
         padding: 12px 12%; 
     }
@@ -393,6 +407,7 @@
     .header__button #toggle__menu{
         display: none;
     }
+
     .about{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -407,6 +422,7 @@
     .about .image{
         display: block;
     }
+
     .skills__container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -428,6 +444,7 @@
     .skills .p_small{
         padding-top: 8px;
     }
+
     .projects__container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -453,6 +470,7 @@
         fill: var(--color-surface-variant);
         background-color: var(--color-surface-variant);
     }
+
     .footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -466,13 +484,13 @@
     }
 }
 
-/* TVs devices */
-@media only screen and (orientation: portrait) and (min-width: 1025px) {
+@media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1920px){
     section, footer{
-        padding: 64px 16%; 
+        padding: 64px 20%; 
     }
+
     .header{
-        padding: 12px 16%; 
+        padding: 12px 20%; 
     }
     .navbar .menu-list{
         position: inherit;
@@ -487,6 +505,7 @@
     .header__button #toggle__menu{
         display: none;
     }
+
     .about{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -501,6 +520,7 @@
     .about .image{
         display: block;
     }
+    
     .skills__container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -522,6 +542,7 @@
     .skills .p_small{
         padding-top: 8px;
     }
+    
     .projects__container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -552,6 +573,7 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 64px;
     }
+
     .footer .p_small{
         padding-top: 16px;
     }
@@ -560,10 +582,13 @@
     }
 }
 
-@media only screen and (orientation: landscape) and (min-width: 1441px) {
+/* X-large devices */
+@media only screen and (min-width: 1921px){
+
     section, footer{
-        padding: 64px 16%; 
+        padding: 64px 30%; 
     }
+
     .header{
         padding: 12px 16%; 
     }
@@ -580,6 +605,7 @@
     .header__button #toggle__menu{
         display: none;
     }
+
     .about{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -597,6 +623,7 @@
         justify-self: center;
         object-fit: cover;
     }
+
     .skills__container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -618,6 +645,7 @@
     .skills .p_small{
         padding-top: 8px;
     }
+
     .projects__container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -643,6 +671,7 @@
         fill: var(--color-surface-variant);
         background-color: var(--color-surface-variant);
     }
+
     .footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
