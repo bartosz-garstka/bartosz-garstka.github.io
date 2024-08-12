@@ -16,12 +16,12 @@ section{
 }
 .p1-s4 .card, .p1-s5 .card{
     padding: 16px;
-    background-color: var(--color-surface-1-variant);
+    background-color: var(--color-surface-variant);
 }
 
 .p1-s6 .p1-s6__heading{
     padding: 16px;
-    background-color: var(--color-surface-1-variant);
+    background-color: var(--color-surface-variant);
 }
 
 .p1-s6 .feature-card:nth-child(n+2){
@@ -29,7 +29,7 @@ section{
 }
 .p1-s6 .p1-s6__features{
     padding: 16px;
-    background-color: var(--color-surface-1-variant);
+    background-color: var(--color-surface-variant);
 }
 .p1-s6 .feature-card img{
     height: 40px;
