@@ -22,7 +22,7 @@ body {
 }
 
 /* Usuwanie stylów list */
-ol, ul {
+ol {
     list-style: none;
 }
 

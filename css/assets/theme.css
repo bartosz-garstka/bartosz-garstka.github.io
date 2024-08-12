@@ -12,8 +12,8 @@ html[data-theme='light'] {
     --color-secondary: #0A0A0A;
     --color-on_secondary: #FFFFFF;
 
-    --color-surface: #FFFFFF;
-    --color-surface-variant: #E8E8E8;
+    --color-surface-1: #FFFFFF;
+    --color-surface-1-variant: #F0F0F0;
 
     --color-on_surface: #0A0A0A;
     --color-on_surface-variant: #333333;
@@ -40,9 +40,8 @@ html[data-theme='dark'] {
     --color-secondary:#FFFFFF ;
     --color-on_secondary:#0A0A0A;
 
-    --color-surface: #0A0A0A;
-    
-    --color-surface-variant: #1C1C1C;
+    --color-surface-1: #0A0A0A;
+    --color-surface-variant-1: #1C1C1C;
 
     --color-on_surface:#FFFFFF;
     --color-on_surface-variant:#C4C4C4;

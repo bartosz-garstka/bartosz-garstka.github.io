@@ -6,6 +6,7 @@
 @import url('/css/responsive.css');
 @import url('/css/project-1.css');
 @import url('/css/404.css');
+@import url('/css/stillsec_page.css');
 
 html,
 body { 
@@ -24,7 +25,6 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
     background: var(--color-primary);
 }
-
 a:hover{
     color: var(--color-primary);
 }

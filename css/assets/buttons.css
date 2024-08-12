@@ -41,6 +41,29 @@
     background-color: var(--color-surface-variant);
 }
 
+.button-primary{
+    display: inline-block;
+    padding: 8px 24px;
+    border: none;
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    color: var(--color-on_secondary);
+}
+.button-primary:hover{
+    background-color: var(--color-secondary-hover);
+}
+
+.button-cta{
+    display: inline-block;
+    padding: 8px 24px;
+    color: var(--color-on_secondary);
+    background-color: var(--color-secondary);
+    cursor: pointer;
+}
+.button-cta:hover{
+    background-color: var(--color-secondary-hover);
+}
+
 .badge{
     padding: 6px 8px;
     background-color: #65A30D;
