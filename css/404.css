@@ -20,7 +20,7 @@
     color: var(--color-on_surface);
 }
 .no-page .no-page__content h1, p{
-    color: var(--color-on_primary);
+    color: #ffffff;
 }
 .no-page .no-page__content p{
     padding-top: 16px;
@@ -32,6 +32,17 @@
 .no-page{
     padding: 0;
     margin: 0;
+}
+
+.button-cta{
+    display: inline-block;
+    padding: 8px 24px;
+    color: #000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.button-cta:hover{
+    background-color: #f6f6f6;
 }
 
 @media (min-aspect-ratio:16/9){
