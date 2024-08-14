@@ -1,43 +1,38 @@
+.button-link-primary{
+    padding: 12px 16px;
+    color: var(--color-on_surface);
+   
+}
+.button-link-primary:hover{
+    background-color: var(--color-surface-variant);
+}
+
+.button-link-secondary{
+    padding: 11px 16px;
+    border: var(--outline-primary);
+    color: var(--color-on_surface);
+    cursor: pointer;
+}
+.button-link-secondary:hover{
+    background-color: var(--color-surface-variant);
+}
+
 .button-icon-primary{
     padding: 8px;
-    stroke: var(--color-on_surface);
-    stroke-width: 1;
     cursor: pointer;
 }
 .button-icon-primary:hover{
-    padding: 8px;
     background-color: var(--color-surface-variant);
 }
 
 .button-icon-secondary{
-    display: flex;
+    display: inline-flex;
     padding: 7px;
-    fill: var(--color-on_surface);
-    stroke: var(--color-on_surface);
-    stroke-width: 2;
     border: var(--outline-primary);
     cursor: pointer;
 }
-.button-icon-secondary.active:hover{
-    background-color: var(--color-surface-variant);
-}
-
-.link-primary{
-    padding: 12px 16px;
-    color: var(--color-on_surface);
-    cursor: pointer;
-}
-.link-primary:hover{
-    background-color: var(--color-surface-variant);
-}
-
-.link-secondary{
-    padding: 11px 16px;
-    color: var(--color-on_surface);
-    border: var(--outline-primary);
-    cursor: pointer;
-}
-.link-secondary:hover{
+.button-icon-secondary:hover{
+    padding: 8px;
     background-color: var(--color-surface-variant);
 }
 
@@ -53,19 +48,29 @@
     background-color: var(--color-secondary-hover);
 }
 
-.button-cta{
-    display: inline-block;
-    padding: 8px 24px;
-    color: var(--color-on_secondary);
-    background-color: var(--color-secondary);
-    cursor: pointer;
-}
-.button-cta:hover{
-    background-color: var(--color-secondary-hover);
-}
+/* X-large devices */
+@media only screen and (min-width: 1921px){
+    .button-link-primary{
+        padding: calc(12px + 0.1vw) calc(16px + 0.1vw);
+       
+    }
+    
+    .button-link-secondary{
+        padding: calc(11px + 0.1vw) calc(16px + 0.1vw);
+    }
+    
+    .button-icon-primary{
+        padding: calc(8px + 0.1vw);
+    }
 
-.badge{
-    padding: 6px 8px;
-    background-color: #65A30D;
-    color: var(--color-on_secondary);
+    .button-icon-secondary{
+        padding: calc(7px + 0.1vw);
+    }
+    .button-icon-secondary:hover{
+        padding: calc(8px + 0.1vw);
+    }
+    
+    .button-primary{
+        padding: calc(8px + 0.1vw) calc(24px + 0.1vw);
+    }
 }

@@ -13,7 +13,30 @@
         <div class="header__logo">
             <a href="#" class="link"><p class="p_large">Bartosz Garstka</p></a>
         </div>
-
+        <nav class="navbar">
+            <ul class="menu-list">
+                <li class="button-link-primary">
+                    <a href="#about">
+                        <p class="link">O mnie</p>
+                    </a>
+                </li>
+                <li class="button-link-primary">
+                    <a href="#skills">
+                        <p class="link">Moje kompetencje</p>
+                    </a>
+                </li>
+                <li class="button-link-primary">
+                    <a href="#projects">
+                        <p class="link">Projekty</p>
+                    </a>
+                </li>
+                <li class="button-link-primary">
+                    <a href="#footer">
+                        <p class="link">Kontakt</p>
+                    </a> 
+                </li>
+            </ul>
+        </nav>
         <div class="header__button">
             <button id="theme-toggle" class="button-icon-primary">
                 <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -27,12 +50,12 @@
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
             </button>
-            <a href="#">
-                <div class="link-secondary">       
+            <div class="button-link-secondary">
+                <a href="#">   
                     <p class="link">EN</p>
-                </div>
-            </a>
-            <div id="toggle__menu" class="button-icon-secondary" style="display: none;">       
+                </a>
+            </div>
+            <div id="toggle__menu" class="button-icon-secondary">       
                 <svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 6H22"/>
                     <path d="M2 12H22"/>
@@ -296,7 +319,7 @@
                 </div>
     
                 <div class="p1-s6__img">
-                    <img src="/assets/images/svg_project-1.svg" alt="">
+                    <img src="/assets/projects/stillsec/svg_project-1.svg" alt="">
                 </div>
 
             </div>
@@ -345,19 +368,21 @@
     </main>
 
     <footer id="footer" class="footer">
-        <div class="footer__logo">
-            <h3>Bartosz Garstka</h3>
-            <p class="p_small">Warszawa, Polska</p>
-            
-        </div>
-        <div class="footer__sm">
-            <p class="p_small">Social media:</p>
-            <div class="sm__container">
+        <div class="container">
+            <div class="container__data">
+                <h3>Bartosz Garstka</h3>
+                <p class="p_small">Warszawa, Polska</p>
+                <p class="p_small">Stronę wykonał: Bartosz Garstka</p>
+            </div>
+            <div class="container__sm">
+                <p class="p_small">Social media:</p>
+                
                 <a href="https://www.linkedin.com/in/bartosz-garstka/" target="_blank" class="button-icon-secondary">
                     <svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
                         <path d="M6.93994 5.00002C6.93968 5.53046 6.72871 6.03906 6.35345 6.41394C5.97819 6.78883 5.46937 6.99929 4.93894 6.99902C4.40851 6.99876 3.89991 6.78779 3.52502 6.41253C3.15014 6.03727 2.93968 5.52846 2.93994 4.99802C2.94021 4.46759 3.15117 3.95899 3.52644 3.5841C3.9017 3.20922 4.41051 2.99876 4.94094 2.99902C5.47137 2.99929 5.97998 3.21026 6.35486 3.58552C6.72975 3.96078 6.94021 4.46959 6.93994 5.00002ZM6.99994 8.48002H2.99994V21H6.99994V8.48002ZM13.3199 8.48002H9.33994V21H13.2799V14.43C13.2799 10.77 18.0499 10.43 18.0499 14.43V21H21.9999V13.07C21.9999 6.90002 14.9399 7.13002 13.2799 10.16L13.3199 8.48002Z" stroke="none"/>
                     </svg>    
                 </a>
+
             </div>
         </div>
     </footer>
