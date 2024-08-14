@@ -9,20 +9,20 @@
 @import url('/css/stillsec_page.css');
 
 html,
-body { 
+body{ 
     scroll-behavior: smooth;
     background-color: var(--color-surface);
 }
 
-html::-webkit-scrollbar {
+html::-webkit-scrollbar{
     width: 6px;
 }
   
-html::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track{
     background: transparent;
 }
 
-html::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb{
     background: var(--color-primary);
 }
 a:hover{

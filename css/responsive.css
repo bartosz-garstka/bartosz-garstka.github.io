@@ -1,5 +1,5 @@
 section, footer{
-    padding: 32px 4%;  
+    padding: 32px 4%; 
 }
 /* Usuwanie stylów list */
 ul {
@@ -96,6 +96,7 @@ ul {
 }
 .project .badges{
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     padding-top: 8px;
 }
@@ -269,8 +270,8 @@ ul {
     }
     .project .badges{
         display: flex;
-        gap: 8px;
-        padding-top: 12px;
+        gap: 4px;
+        padding-top: 4px;
     }
     .project svg{
         width: 200;
@@ -490,7 +491,8 @@ ul {
 
 @media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1920px){
     section, footer{
-        padding: 64px 20%; 
+        padding: 64px 20%;
+        /* border: var(--border-1); */
     }
 
     .header{
@@ -530,21 +532,25 @@ ul {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 32px;
         row-gap: 32px;
-        padding-top: 32px;
+        margin-top: 32px;
+        /* border: var(--border-2); */
     }
     .skills .card{
         padding: 32px;
-        border: var(--outline-primary);
+        /* border: var(--outline-primary);
+        border: var(--border-3); */
     }
     .skills .card svg{
         height: 32px;
         width: 32px;
     }
     .skills .card__content{
-        padding-top: 16px;
+        margin-top: 16px;
+        /* border: var(--border-4); */
     }
-    .skills .p_small{
-        padding-top: 8px;
+    .skills .card__content p{
+        margin-top: 8px;
+        /* border: var(--border-5); */
     }
     
     .projects__container{
@@ -563,8 +569,8 @@ ul {
     }
     .project .badges{
         display: flex;
-        gap: 12px;
-        padding-top: 16px;
+        gap: 8px;
+        padding-top: 8px;
     }
     .project svg{
         width: 200;
@@ -665,8 +671,8 @@ ul {
     }
     .project .badges{
         display: flex;
-        gap: 12px;
-        padding-top: 16px;
+        gap: 4px;
+        padding-top: 8px;
     }
     .project svg{
         width: 200;
