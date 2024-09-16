@@ -96,6 +96,7 @@ ul {
 }
 .project .badges{
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     padding-top: 8px;
 }
@@ -269,8 +270,8 @@ ul {
     }
     .project .badges{
         display: flex;
-        gap: 8px;
-        padding-top: 12px;
+        gap: 4px;
+        padding-top: 4px;
     }
     .project svg{
         width: 200;
@@ -563,8 +564,8 @@ ul {
     }
     .project .badges{
         display: flex;
-        gap: 12px;
-        padding-top: 16px;
+        gap: 8px;
+        padding-top: 8px;
     }
     .project svg{
         width: 200;
@@ -665,8 +666,8 @@ ul {
     }
     .project .badges{
         display: flex;
-        gap: 12px;
-        padding-top: 16px;
+        gap: 4px;
+        padding-top: 8px;
     }
     .project svg{
         width: 200;

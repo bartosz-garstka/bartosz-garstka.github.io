@@ -1,0 +1,364 @@
+.gymboost-main{
+    background-color: var(--gymboost-color-surface-1);
+}
+.gymboost-main section{
+    margin: 96px 0;
+}
+.mark{
+    background-color: var(--gymboost-primary);
+    padding: 4px;
+}
+.mark__heading{
+    color: var(--gymboost-secondary);
+}
+.mark__dot{
+    color: var(--gymboost-tertiary);
+}
+.container__text{ 
+    background-color: var(--gymboost-color-surface-2);
+    padding: 24px;
+    border: var(--gymboost-outline-primary);
+}
+.container__text p{
+    color: var(--gymboost-color-on_surface);
+}
+
+.gymboost__banner{
+    background-color: var(--gymboost-color-surface-1);
+}
+.gymboost__banner .banner__headline{
+    color: var(--gymboost-primary);
+}
+.gymboost__banner .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.gymboost__banner .container__content{
+    align-self: center;  
+}
+.gymboost__banner .container__content h1{
+    color: var(--gymboost-tertiary);  
+}
+
+.gymboost__about .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 64px;
+}
+.gymboost__about .container__img{
+    background-color: var(--gymboost-primary);
+}
+.gymboost__about .container__text{
+    margin-top: 64px;
+}
+
+.gymboost__goals .container__cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 32px;
+    margin-top: 64px;
+}
+.gymboost__goals .goal-card{
+    background-color: var(--gymboost-color-surface-2);
+    border: var(--gymboost-outline-primary);
+    padding: 24px;
+}
+.gymboost__goals .goal-card p{
+    color: var(--gymboost-color-on_surface);
+    margin-top: 16px;
+}
+
+.gymboost__survey .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 64px;
+}
+.gymboost__survey .container__text{
+    margin-top: 64px;
+}
+.gymboost__survey .container__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.gymboost__survey .survey-card{
+    padding: 16px;
+    background-color: var(--gymboost-color-surface-2);
+    border: var(--gymboost-outline-primary);
+}
+.gymboost__survey .survey-card p{
+    padding: 8px 24px;
+    color: var(--gymboost-color-on_surface);
+    border-left: 4px solid var(--gymboost-primary);
+}
+
+.gymboost__persona .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 64px;
+}
+.gymboost__persona .container__text{
+    margin-top: 64px;
+}
+.gymboost__persona .container__img{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.gymboost__vpc .container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 64px;
+}
+.gymboost__vpc .container__text{
+    margin-top: 64px;
+}
+
+.gymboost__key-features .container__cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 32px;
+}
+.gymboost__key-features .container__cards{
+    margin-top: 64px;
+}
+.gymboost__key-features .feature-card{
+    padding: 16px;
+    background-color: var(--gymboost-color-surface-2);
+    border: var(--gymboost-outline-primary);
+    color: var(--gymboost-color-on_surface);
+}
+.gymboost__key-features .feature-card p,h3{
+    color: var(--gymboost-color-on_surface);
+}
+.gymboost__key-features .feature-card .lists{
+    list-style-type: decimal;
+    list-style-position: inherit;
+    margin-top: 16px;
+}
+.gymboost__key-features .feature-card .item{
+    margin-left: 16px;
+}
+
+.gymboost__flowchart .container__text{
+    margin-top: 64px;
+}
+.gymboost__flowchart .container__img{
+    margin-top: 64px;
+}
+
+.gymboost__ia .container__text{
+    margin-top: 64px;
+}
+.gymboost__ia .container__img{
+    margin-top: 64px;
+}
+
+.gymboost__wireframe .container__text{
+    margin-top: 64px;
+}
+.gymboost__wireframe .container__img{
+    margin-top: 64px;
+}
+
+.gymboost__branding .container__text{
+    margin-top: 64px;
+}
+.gymboost__branding .container__img{
+    margin-top: 64px;
+}
+.gymboost__branding .container-logo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 32px;
+    margin-top: 64px;
+}
+
+.gymboost__design .container__text{
+    margin-top: 64px;
+}
+.gymboost__design .container__img{
+    margin-top: 64px;
+}
+.gymboost__summary .container__text{
+    margin-top: 64px;
+}
+
+.footer{
+    background-color: var(--gymboost-color-surface-1);
+}
+.footer h3{
+    color: var(--gymboost-color-on_surface);
+}
+.footer p{
+    color: var(--gymboost-color-on_surface-variant);
+}
+
+/* Mobile devices */
+@media only screen and (orientation: portrait) and (max-width: 480px) {
+    .gymboost-main section{
+        margin: 0;
+    }
+    .container__text{ 
+        padding: 16px;
+    }
+
+    .gymboost__about .container{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 16px;
+    }
+    .gymboost__about .container__text{
+        margin-top: 24px;
+    }
+
+    .gymboost__goals .container__cards{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 16px;
+        margin-top: 24px;
+    }
+    .gymboost__goals .goal-card{
+        padding: 16px;
+    }
+    .gymboost__goals .goal-card p{
+        color: var(--gymboost-color-on_surface);
+        margin-top: 8px;
+    }
+    .gymboost__goals .goal-card img{
+        height: 24px;
+    }
+
+    .gymboost__survey .container{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 16px;
+    }
+    .gymboost__survey .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__survey .container__cards{
+        gap: 8px;
+    }
+    .gymboost__survey .survey-card{
+        padding: 16px;
+    }
+    .gymboost__survey .survey-card p{
+        padding: 4px 12px;
+        border-left: 3px solid var(--gymboost-primary);
+    }
+
+    .gymboost__persona .container{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 16px;
+    }
+    .gymboost__persona .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__persona .container__img{
+        gap: 16px;
+    }
+
+    .gymboost__vpc .container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 16px;
+        column-gap: 0;
+    }
+    .gymboost__vpc .container__text{
+        margin-top: 24px;
+    }
+
+    .gymboost__key-features .container__cards{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 16px;
+    }
+    .gymboost__key-features .container__cards{
+        margin-top: 24px;
+    }
+    .gymboost__key-features .feature-card .lists{
+        margin-top: 8px;
+    }
+    .gymboost__key-features .feature-card .item{
+        margin-left: 16px;
+    }
+
+    .gymboost__flowchart .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__flowchart .container__img{
+        margin-top: 16px;
+    }
+
+    .gymboost__ia .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__ia .container__img{
+        margin-top: 16px;
+    }
+
+    .gymboost__wireframe .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__wireframe .container__img{
+        margin-top: 16px;
+    }
+    
+    .gymboost__branding .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__branding .container__img{
+        margin-top: 16px;
+    }
+    .gymboost__branding .container-logo{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
+        margin-top: 16px;
+    }
+    
+    .gymboost__design .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__design .container__img{
+        margin-top: 16px;
+    }
+    .gymboost__summary .container__text{
+        margin-top: 24px;
+    }
+
+
+}
+  
+@media only screen and (orientation: landscape) and (min-width: 568px) and (max-width: 927px) {
+
+}
+
+/* Tablet devices */
+@media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px){
+
+}
+
+/* Tablet devices */
+@media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px){
+
+}
+
+/* Large devices */
+@media only screen and (orientation: portrait) and (min-width: 1025px) {
+
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1920px){
+
+}
+
+/* X-large devices */
+@media only screen and (min-width: 1921px){
+
+}
