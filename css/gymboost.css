@@ -2,7 +2,7 @@
     background-color: var(--gymboost-color-surface-1);
 }
 .gymboost-main section{
-    margin: 96px 0;
+    margin: 0;
 }
 .mark{
     background-color: var(--gymboost-primary);
@@ -331,22 +331,154 @@
     .gymboost__summary .container__text{
         margin-top: 24px;
     }
-
-
 }
   
 @media only screen and (orientation: landscape) and (min-width: 568px) and (max-width: 927px) {
+    .gymboost-main section{
+        margin: 0;
+    }
+    .container__text{ 
+        padding: 16px;
+    }
 
+    .gymboost__about .container{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 16px;
+    }
+    .gymboost__about .container__text{
+        margin-top: 24px;
+    }
+
+    .gymboost__goals .container__cards{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 16px;
+        margin-top: 24px;
+    }
+    .gymboost__goals .goal-card{
+        padding: 16px;
+    }
+    .gymboost__goals .goal-card p{
+        color: var(--gymboost-color-on_surface);
+        margin-top: 8px;
+    }
+    .gymboost__goals .goal-card img{
+        height: 24px;
+    }
+
+    .gymboost__survey .container{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 16px;
+    }
+    .gymboost__survey .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__survey .container__cards{
+        gap: 8px;
+    }
+    .gymboost__survey .survey-card{
+        padding: 16px;
+    }
+    .gymboost__survey .survey-card p{
+        padding: 4px 12px;
+        border-left: 3px solid var(--gymboost-primary);
+    }
+
+    .gymboost__persona .container{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 16px;
+    }
+    .gymboost__persona .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__persona .container__img{
+        gap: 16px;
+    }
+
+    .gymboost__vpc .container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 16px;
+        column-gap: 0;
+    }
+    .gymboost__vpc .container__text{
+        margin-top: 24px;
+    }
+
+    .gymboost__key-features .container__cards{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0;
+        row-gap: 16px;
+    }
+    .gymboost__key-features .container__cards{
+        margin-top: 24px;
+    }
+    .gymboost__key-features .feature-card .lists{
+        margin-top: 8px;
+    }
+    .gymboost__key-features .feature-card .item{
+        margin-left: 16px;
+    }
+
+    .gymboost__flowchart .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__flowchart .container__img{
+        margin-top: 16px;
+    }
+
+    .gymboost__ia .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__ia .container__img{
+        margin-top: 16px;
+    }
+
+    .gymboost__wireframe .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__wireframe .container__img{
+        margin-top: 16px;
+    }
+    
+    .gymboost__branding .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__branding .container__img{
+        margin-top: 16px;
+    }
+    .gymboost__branding .container-logo{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
+        margin-top: 16px;
+    }
+    
+    .gymboost__design .container__text{
+        margin-top: 24px;
+    }
+    .gymboost__design .container__img{
+        margin-top: 16px;
+    }
+    .gymboost__summary .container__text{
+        margin-top: 24px;
+    }
 }
 
 /* Tablet devices */
 @media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px){
-
+    .gymboost-main section{
+        margin: 0;
+    }
 }
 
 /* Tablet devices */
 @media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px){
-
+    .gymboost-main section{
+        margin: 0;
+    }
 }
 
 /* Large devices */
@@ -360,5 +492,7 @@
 
 /* X-large devices */
 @media only screen and (min-width: 1921px){
-
+    section, footer{
+        padding: calc(128px + 1vw) 24%;    
+    }
 }

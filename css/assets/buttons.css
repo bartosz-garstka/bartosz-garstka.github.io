@@ -17,6 +17,15 @@
     background-color: var(--color-surface-variant);
 }
 
+.button-link-tertiary{
+    padding: 12px 16px;
+    color: #0A0A0A;
+    background-color: #FFFFFF;
+}
+.button-link-tertiary:hover{
+    background-color: var(--color-surface-variant);
+}
+
 .button-icon-primary{
     padding: 8px;
     cursor: pointer;
@@ -56,6 +65,10 @@
     }
     
     .button-link-secondary{
+        padding: calc(11px + 0.1vw) calc(16px + 0.1vw);
+    }
+
+    .button-link-tertiary{
         padding: calc(11px + 0.1vw) calc(16px + 0.1vw);
     }
     
