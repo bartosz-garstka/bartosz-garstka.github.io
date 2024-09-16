@@ -4,28 +4,611 @@
 @import url('/css/assets/typography.css');
 @import url('/css/assets/buttons.css');
 @import url('/css/responsive.css');
-@import url('/css/project-1.css');
 @import url('/css/404.css');
 @import url('/css/stillsec_page.css');
 @import url('/css/gymboost.css');
 
 html,
-body { 
+body{ 
     scroll-behavior: smooth;
     background-color: var(--color-surface);
 }
 
-html::-webkit-scrollbar {
+html::-webkit-scrollbar{
     width: 6px;
 }
   
-html::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track{
     background: transparent;
 }
 
-html::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb{
     background: var(--color-primary);
 }
-a:hover{
-    color: var(--color-primary);
+
+section, footer{
+    padding: 32px 4%;
+}
+/* Usuwanie stylów list */
+ul {
+    list-style-type: none;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--outline-primary);
+    background-color: var(--color-surface);
+    z-index: 999;
+
+    padding: 8px 4%;
+}
+.header .header__button{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.navbar .menu-list{
+    position: absolute;
+    top:100%; left:0; right:0;
+    padding: 16px;
+    background: var(--color-surface);
+    border-top: var(--outline-primary);
+    border-bottom: var(--outline-primary);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition:.1s linear;  
+}
+.navbar .menu-list.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+#theme-toggle{
+    background: none;
+    border: none;
+}
+#theme-toggle:hover{
+    background-color: var(--color-surface-variant);
+}
+#icon-sun, #icon-moon {   
+    fill: none;
+    stroke: var(--color-on_surface);
+    stroke-width: 1.5;
+    transition: opacity 0.5s ease;
+    stroke-dasharray: 1000; /* Ustaw odpowiednią wartość, większą niż długość ścieżki */
+    stroke-dashoffset: 1000;
+    animation: draw 7s linear forwards;
+}
+@keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+}
+#toggle__menu{
+    stroke-width: 1.5;
+    stroke: var(--color-on_surface);
+}
+
+.about .container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 32px;
+}
+.about .container__content .heading p{
+    margin-top: 8px;
+}
+.about .container__content .paragraph{
+    margin-top: 16px;
+}
+.about .container__img{
+    width: 75%;
+    justify-self: center;
+}
+
+.skills .container__content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 16px;
+    margin-top: 16px;
+}
+.skills .skill-card{
+    padding: 16px;
+    border: var(--outline-primary);
+}
+.skills .skill-card__content{
+    margin-top: 8px;
+}
+.skills .skill-card__content .paragraph{
+    margin-top: 4px;
+}
+
+.projects .container__content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 16px;
+    align-items: start;
+    margin-top: 16px;
+}
+.projects .project-card{
+    padding: 16px;
+    border: var(--outline-primary);
+}
+.projects .project-card__content{
+    margin-top: 16px;
+}
+.projects .project-card__content .paragraph,.badges{
+    margin-top: 8px;
+}
+.projects .project-card__content .badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.projects .project-card__content .badge{
+    padding: 4px 8px;
+    color: var(--color-on_primary);
+    background-color: #16A34A;
+}
+
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 16px;
+}
+.footer .container__data p{
+    margin-top: 8px;
+}
+.footer .container__sm a{
+    margin-top: 8px;
+}
+.footer .button-icon-secondary{
+    fill: var(--color-on_surface);
+}
+
+/* Mobile devices */
+@media only screen and (orientation: portrait) and (max-width: 480px) {
+}
+  
+@media only screen and (orientation: landscape) and (min-width: 568px) and (max-width: 927px) {
+    section, footer{
+        padding: 32px 6%; 
+    }
+
+    .header{
+        padding: 8px 6%; 
+    }
+    .navbar .menu-list{
+        padding: 16px 6%;
+    }
+
+    .about .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: 16px;
+    }
+
+    .skills .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+    }
+
+    .projects .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: 16px;
+    }
+}
+  
+/* Tablet devices */
+@media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px){
+    section, footer{
+        padding: 64px 8%; 
+    }
+
+    .header{
+        padding: 12px 8%; 
+    }
+    .navbar .menu-list{
+        padding: 16px 8%;
+    }
+
+    .about .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: 24px;
+    }
+    .about .container__content .heading p{
+        margin-top: 8px;
+    }
+    .about .container__content .paragraph{
+        margin-top: 16px;
+    }
+
+    .skills .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+        column-gap: 24px;
+        margin-top: 24px;
+    }
+    .skills .skill-card{
+        padding: 24px;
+    }
+    .skills .skill-card__content{
+        margin-top: 16px;
+    }
+    .skills .skill-card__content .paragraph{
+        margin-top: 8px;
+    }
+
+    .projects .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+        column-gap: 24px;
+        margin-top: 24px;
+    }
+    .projects .project-card{
+        padding: 24px;
+    }
+    .projects .project-card__content{
+        margin-top: 16px;
+    }
+    .projects .project-card__content .paragraph,.badges{
+        margin-top: 8px;
+    }
+    .projects .project-card__content .badges{
+        gap: 8px;
+    }
+    .projects .project-card__content .badge{
+        padding: 4px 8px;
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: 24px;
+    }
+    .footer .container__data p{
+        margin-top: 16px;
+    }
+    .footer .container__sm a{
+        margin-top: 16px;
+    }
+}
+/* Tablet devices */
+@media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px){
+    section, footer{
+        padding: 64px 8%; 
+    }
+
+    .header{
+        padding: 12px 8%; 
+    }
+    .navbar .menu-list{
+        position: inherit;
+        display: flex;
+        padding: 0px;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        clip-path: none;
+        transition: none;   
+    }
+    .header__button #toggle__menu{
+        display: none;
+    }
+
+    .about .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: 24px;
+    }
+    .about .container__content .heading p{
+        margin-top: 8px;
+    }
+    .about .container__content .paragraph{
+        margin-top: 16px;
+    }
+
+    .skills .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+        column-gap: 24px;
+        margin-top: 32px;
+    }
+    .skills .skill-card{
+        padding: 24px;
+    }
+    .skills .skill-card__content{
+        margin-top: 16px;
+    }
+    .skills .skill-card__content .paragraph{
+        margin-top: 8px;
+    }
+
+    .projects .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 24px;
+        column-gap: 24px;
+        margin-top: 24px;
+    }
+    .projects .project-card{
+        padding: 24px;
+    }
+    .projects .project-card__content{
+        margin-top: 16px;
+    }
+    .projects .project-card__content .paragraph,.badges{
+        margin-top: 8px;
+    }
+    .projects .project-card__content .badges{
+        gap: 8px;
+    }
+    .projects .project-card__content .badge{
+        padding: 4px 8px;
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: 24px;
+    }
+    .footer .container__data p{
+        margin-top: 16px;
+    }
+    .footer .container__sm a{
+        margin-top: 16px;
+    }
+}
+  
+/* Large devices */
+@media only screen and (orientation: portrait) and (min-width: 1025px) {
+    section, footer{
+        padding: 96px 12%; 
+    }
+
+    .header{
+        padding: 16px 12%; 
+    }
+    .navbar .menu-list{
+        position: inherit;
+        display: flex;
+        padding: 0px;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        clip-path: none;
+        transition: none;   
+    }
+    .header__button #toggle__menu{
+        display: none;
+    }
+
+    .about .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: 32px;
+    }
+    .about .container__content .heading p{
+        margin-top: 16px;
+    }
+    .about .container__content .paragraph{
+        margin-top: 32px;
+    }
+    
+    .skills .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 32px;
+        column-gap: 32px;
+        margin-top: 32px;
+    }
+    .skills .skill-card{
+        padding: 32px;
+    }
+    .skills .skill-card__content{
+        margin-top: 16px;
+    }
+    .skills .skill-card__content .paragraph{
+        margin-top: 8px;
+    }
+
+    .projects .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 32px;
+        column-gap: 32px;
+        margin-top: 32px;
+    }
+    .projects .project-card{
+        padding: 32px;
+    }
+    .projects .project-card__content{
+        margin-top: 16px;
+    }
+    .projects .project-card__content .paragraph,.badges{
+        margin-top: 8px;
+    }
+    .projects .project-card__content .badges{
+        gap: 8px;
+    }
+    .projects .project-card__content .badge{
+        padding: 4px 8px;
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: 32px;
+    }
+    .footer .container__data p{
+        margin-top: 16px;
+    }
+    .footer .container__sm a{
+        margin-top: 16px;
+    }
+}
+
+/* Large devices */
+@media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1920px){
+    section, footer{
+        padding: 96px 24%;
+    }
+
+    .header{
+        padding: 16px 24%;
+    }
+    .navbar .menu-list{
+        position: inherit;
+        display: flex;
+        padding: 0px;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        clip-path: none;
+        transition: none;
+    }
+    .header__button #toggle__menu{
+        display: none;
+    }
+
+    .about .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: 32px;
+    }
+    .about .container__content .heading p{
+        margin-top: 16px;
+    }
+    .about .container__content .paragraph{
+        margin-top: 32px;
+    }
+    
+    .skills .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 32px;
+        column-gap: 32px;
+        margin-top: 32px;
+    }
+    .skills .skill-card{
+        padding: 32px;
+    }
+    .skills .skill-card__content{
+        margin-top: 16px;
+    }
+    .skills .skill-card__content .paragraph{
+        margin-top: 8px;
+    }
+
+    .projects .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 32px;
+        column-gap: 32px;
+        margin-top: 32px;
+    }
+    .projects .project-card{
+        padding: 32px;
+    }
+    .projects .project-card__content{
+        margin-top: 16px;
+    }
+    .projects .project-card__content .paragraph,.badges{
+        margin-top: 8px;
+    }
+    .projects .project-card__content .badges{
+        gap: 8px;
+    }
+    .projects .project-card__content .badge{
+        padding: 4px 8px;
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: 32px;
+    }
+    .footer .container__data p{
+        margin-top: 16px;
+    }
+    .footer .container__sm a{
+        margin-top: 16px;
+    }
+}
+
+/* X-large devices */
+@media only screen and (min-width: 1921px){
+    section, footer{
+        padding: calc(96px + 0.5vw) 30%; 
+    }
+    
+    .header{
+        padding: calc(16px + 0.5vw) 30%;
+    }
+
+    .about .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: calc(32px + 0.5vw);
+    }
+    .about .container__content .heading p{
+        margin-top: calc(16px + 0.5vw);
+    }
+    .about .container__content .paragraph{
+        margin-top: calc(32px + 0.5vw);
+    }
+    
+    .skills .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: calc(32px + 0.5vw);
+        column-gap: calc(32px + 0.5vw);
+        margin-top: calc(32px + 0.5vw);
+    }
+    .skills .skill-card{
+        padding: calc(32px + 0.1vw);
+    }
+    .skills .skill-card__content{
+        margin-top: calc(16px + 0.5vw);
+    }
+    .skills .skill-card__content .paragraph{
+        margin-top: calc(8px + 0.5vw);
+    }
+
+    .projects .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: calc(32px + 0.5vw);
+        column-gap: calc(32px + 0.5vw);
+        margin-top: calc(32px + 0.5vw);
+    }
+    .projects .project-card{
+        padding: calc(32px + 0.1vw);
+    }
+    .projects .project-card__content{
+        margin-top: calc(16px + 0.5vw);
+    }
+    .projects .project-card__content .paragraph,.badges{
+        margin-top: calc(8px + 0.5vw);
+    }
+    .projects .project-card__content .badges{
+        gap: calc(8px + 0.1vw);
+    }
+    .projects .project-card__content .badge{
+        padding: calc(4px + 0.1vw) calc(8px + 0.1vw);
+    }
+
+    .footer .container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0;
+        column-gap: calc(32px + 0.5vw);
+    }
+    .footer .container__data p{
+        margin-top: calc(16px + 0.5vw);
+    }
+    .footer .container__sm a{
+        margin-top: calc(16px + 0.5vw);
+    }
 }
