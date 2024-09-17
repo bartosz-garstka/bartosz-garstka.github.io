@@ -1,6 +1,19 @@
-.button-link-primary{
-    padding: 12px 16px;
+.button-lang{
+    display: inline-block;
+    padding: 9px 16px;
     color: var(--color-on_surface);
+    border: var(--outline-primary);
+    cursor: pointer;
+}
+.button-lang:hover{
+    background-color: var(--color-surface-1-hover);
+}
+
+.button-link-primary{
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--color-on_surface);
+    cursor: pointer;
    
 }
 .button-link-primary:hover{
@@ -25,6 +38,8 @@
 .button-link-tertiary:hover{
     background-color: var(--color-surface-variant);
 }
+
+
 
 .button-icon-primary{
     padding: 8px;

@@ -37,10 +37,18 @@
     color: var(--gymboost-color-on_surface);
     margin-top: 8px;
 }
-.gymboost__banner .container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.gymboost__banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 4% 4%;
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
 }
+
 .gymboost__banner .container__content{
     align-self: center;  
 }
@@ -57,7 +65,7 @@
     background-color: var(--gymboost-primary);
 }
 .gymboost__about .container__text{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 
 .gymboost__goals .container__cards{
@@ -65,7 +73,7 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 32px;
     row-gap: 32px;
-    margin-top: 64px;
+    margin-top: 32px;
 }
 .gymboost__goals .goal-card{
     background-color: var(--gymboost-color-surface-2);
@@ -83,7 +91,7 @@
     column-gap: 64px;
 }
 .gymboost__survey .container__text{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 .gymboost__survey .container__cards{
     display: flex;
@@ -107,7 +115,7 @@
     column-gap: 64px;
 }
 .gymboost__persona .container__text{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 .gymboost__persona .container__img{
     display: flex;
@@ -121,7 +129,7 @@
     row-gap: 64px;
 }
 .gymboost__vpc .container__text{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 
 .gymboost__key-features .container__cards{
@@ -131,7 +139,7 @@
     row-gap: 32px;
 }
 .gymboost__key-features .container__cards{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 .gymboost__key-features .feature-card{
     padding: 16px;
@@ -155,28 +163,28 @@
 }
 
 .gymboost__flowchart .container__text{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 .gymboost__flowchart .container__img{
     margin-top: 64px;
 }
 
 .gymboost__ia .container__text{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 .gymboost__ia .container__img{
     margin-top: 64px;
 }
 
 .gymboost__wireframe .container__text{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 .gymboost__wireframe .container__img{
     margin-top: 64px;
 }
 
 .gymboost__branding .container__text{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 .gymboost__branding .container__img{
     margin-top: 64px;
@@ -190,13 +198,13 @@
 }
 
 .gymboost__design .container__text{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 .gymboost__design .container__img{
     margin-top: 64px;
 }
 .gymboost__summary .container__text{
-    margin-top: 64px;
+    margin-top: 32px;
 }
 
 .gymboost__footer{
