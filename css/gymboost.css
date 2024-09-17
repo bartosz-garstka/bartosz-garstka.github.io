@@ -29,6 +29,14 @@
 .gymboost__banner .banner__headline{
     color: var(--gymboost-primary);
 }
+.gymboost__banner .container__content h1{
+    font-size: 64px;
+
+}
+.gymboost__banner .container__content p{
+    color: var(--gymboost-color-on_surface);
+    margin-top: 8px;
+}
 .gymboost__banner .container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -131,7 +139,10 @@
     border: var(--gymboost-outline-primary);
     color: var(--gymboost-color-on_surface);
 }
-.gymboost__key-features .feature-card p,h3{
+.gymboost__key-features .feature-card h3{
+    color: var(--gymboost-color-on_surface);
+}
+.gymboost__key-features .feature-card p{
     color: var(--gymboost-color-on_surface);
 }
 .gymboost__key-features .feature-card .lists{
@@ -188,13 +199,13 @@
     margin-top: 64px;
 }
 
-.footer{
+.gymboost__footer{
     background-color: var(--gymboost-color-surface-1);
 }
-.footer h3{
+.gymboost__footer h3{
     color: var(--gymboost-color-on_surface);
 }
-.footer p{
+.gymboost__footer p{
     color: var(--gymboost-color-on_surface-variant);
 }
 

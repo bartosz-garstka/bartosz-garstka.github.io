@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 section, footer{
     padding: 32px 4%;  
 }
@@ -653,7 +652,7 @@ ul {
 
     .projects__container{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 32px;
         row-gap: 32px;
         padding-top: 32px;
@@ -689,5 +688,3 @@ ul {
         padding-top: 16px;
     }
 }
-=======
->>>>>>> 51a1097a9f9fbd8de19276c92de4bb86ce3a273f

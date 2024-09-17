@@ -60,6 +60,7 @@ h3{
     letter-spacing: 0;
     font-weight: 400;
     font-style: normal;
+    color: var(--color-on_surface);
 }
 /* Mobile devices */
 @media only screen and (orientation: portrait) and (max-width: 480px) {
