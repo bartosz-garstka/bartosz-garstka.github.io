@@ -19,7 +19,7 @@ html[data-theme='light'] {
     --border-5: 3px dashed var(--color-border-5);
     
     /* colors */
-    --color-primary: #BD162C;
+    --color-primary: #000000;
     --color-on_primary: #FFFFFF;
 
     --color-secondary: #0A0A0A;
@@ -63,7 +63,7 @@ html[data-theme='light'] {
 
 html[data-theme='dark'] {
     /* colors */
-    --color-primary: #BD162C;
+    --color-primary: #000000;
     --color-on_primary: #FFFFFF;
 
     --color-secondary:#FFFFFF ;
