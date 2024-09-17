@@ -209,12 +209,14 @@
 
 .gymboost__footer{
     background-color: var(--gymboost-color-surface-1);
+    border-top: var(--gymboost-outline-primary);
 }
 .gymboost__footer h3{
     color: var(--gymboost-color-on_surface);
 }
 .gymboost__footer p{
     color: var(--gymboost-color-on_surface-variant);
+    margin-top: 8px;
 }
 
 /* Mobile devices */
