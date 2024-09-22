@@ -9,9 +9,13 @@
 </head>
 <body>
 
+    
+
     <header class="header">
         <div class="header__logo">
-            <a href="#" class="link"><p class="p_large">Bartosz Garstka</p></a>
+            <a href="#" class="link">
+                <p class="p_large"></p>
+            </a>
         </div>
         <nav class="navbar">
             <ul class="menu-list">
@@ -33,7 +37,8 @@
             </ul>
         </nav>
         <div class="header__button">
-            <button id="theme-toggle" class="button-icon-primary">
+
+            <button id="theme-toggle" class="button-toggle-theme">
                 <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <circle cx="12" cy="12" r="4.5"/>
                     <path d="M12 2V5"/>
@@ -45,12 +50,19 @@
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
             </button>
-            <div class="button-lang">
-                <a href="#">   
-                    <p class="link">EN</p>
-                </a>
-            </div>
-            <div id="toggle__menu" class="button-icon-secondary">       
+
+            <a href="#">
+                <div class="button-lang">
+                   <p class="link">EN</p>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/bartosz-garstka/" target="_blank" class="button-icon-primary">
+                <svg id="icon-button" width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.93994 5.00002C6.93968 5.53046 6.72871 6.03906 6.35345 6.41394C5.97819 6.78883 5.46937 6.99929 4.93894 6.99902C4.40851 6.99876 3.89991 6.78779 3.52502 6.41253C3.15014 6.03727 2.93968 5.52846 2.93994 4.99802C2.94021 4.46759 3.15117 3.95899 3.52644 3.5841C3.9017 3.20922 4.41051 2.99876 4.94094 2.99902C5.47137 2.99929 5.97998 3.21026 6.35486 3.58552C6.72975 3.96078 6.94021 4.46959 6.93994 5.00002ZM6.99994 8.48002H2.99994V21H6.99994V8.48002ZM13.3199 8.48002H9.33994V21H13.2799V14.43C13.2799 10.77 18.0499 10.43 18.0499 14.43V21H21.9999V13.07C21.9999 6.90002 14.9399 7.13002 13.2799 10.16L13.3199 8.48002Z" stroke="none"/>
+                </svg>    
+            </a>
+            <div id="toggle__menu" class="button-toggle-menu">       
                 <svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 6H22"/>
                     <path d="M2 12H22"/>
@@ -63,13 +75,15 @@
     <main id="main" class="main">
         <!-- about section start -->
         <section id="about" class="about">
-            <div class="content">
-                <h1>Cześć, nazywam się Bartosz Garstka</h1>
-                <p class="p_large">Jestem UX Designerem | UI Designerem | Web Deweloperem</p>
-                <p class="p_medium">UX/UI Designer z ponad 4-letnim doświadczeniem w tworzeniu intuicyjnych i atrakcyjnych interfejsów użytkownika. Specjalizuję się w projektowaniu aplikacji mobilnych i webowych, stron internetowych posiadając doświadczenie w pracy z zespołami developerskimi, klientami oraz interesariuszami. Zorientowany na użytkownika, z pasją do ciągłego doskonalenia swoich umiejętności i wdrażania trendów oraz technologii w projektowaniu.</p>
-            </div>
-            <div class="image">
-                <img src="/assets/portret_29.07.2024.jpg" alt="">
+            <div class="container">
+                <div class="content">
+                    <h1>Cześć, nazywam się Bartosz Garstka</h1>
+                    <p class="p_large">UX/UI Designer | Website Deweloper</p>
+                    <p class="p_medium">UX/UI Designer z ponad 4-letnim doświadczeniem w tworzeniu intuicyjnych i atrakcyjnych interfejsów użytkownika. Specjalizuję się w projektowaniu aplikacji mobilnych i webowych, stron internetowych posiadając doświadczenie w pracy z zespołami developerskimi, klientami oraz interesariuszami. Zorientowany na użytkownika, z pasją do ciągłego doskonalenia swoich umiejętności i wdrażania trendów oraz technologii w projektowaniu.</p>
+                </div>
+                <div class="image">
+                    <img src="/assets/images/portret.jpg" alt="">
+                </div>
             </div>
         </section>
         <!-- about section end -->
@@ -78,104 +92,55 @@
         <section id="skills" class="skills">
             <div class="container">
                 <div class="container__heading">
-                    <h2>Moje Doświadczenie:</h2>
+                    <h2>Moje kompetencje:</h2>
                 </div>
                 <div class="container__content">
                     <div class="skill-card">
-                        <div class="skill-card__icon">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#1C1C1C" stroke="none" stroke-width="4"></circle>
-                            </svg>
-                        </div>
-                        <div class="skill-card__content">
-                            <div class="title">
-                                <h3>Projektowanie User Centred Design</h3>
-                            </div>
-                            <div class="paragraph">
-                                <p class="p_small">Znajomość zasad i metodologii projektowania skoncentrowanego na użytkowniku. Umiejętność przeprowadzania badań użytkowników, analizy potrzeb i tworzenia person.</p>
-                            </div>
-                        </div>
+                        <h3>UX/UI Design</h3>
+                        <p class="p_small">Projektowanie interfejsów użytkownika, który łączy funkcjonalność z estetyką, dbając o intuicyjność i przyjazność obsługi. Skupiam się na doświadczeniach użytkownika oraz wizualnej warstwie interakcji, tworząc spójne i angażujące produkty cyfrowe.</p>
                     </div>
 
                     <div class="skill-card">
-                        <div class="skill-card__icon">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#1C1C1C" stroke="none" stroke-width="4"></circle>
-                            </svg>
-                        </div>
-                        <div class="skill-card__content">
-                            <div class="title">
-                                <h3>Projektowanie Architektury informacji i User flow</h3>
-                            </div>
-                            <div class="paragraph">
-                                <p class="p_small">Projektowanie struktury treści aplikacji, oraz świeżek jakie użytkownicy pokonują podczas interakcji z produktem.</p>
-                            </div>
-                        </div>
+                        <h3>Audyt UX</h3>
+                        <p class="p_small">Umiejętność analizy produktu pod kontem użyteczności, intuicyjności i efektywności w celu indentyfikacji obszarów wymagających poprawy.</p>
                     </div>
 
                     <div class="skill-card">
-                        <div class="skill-card__icon">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#1C1C1C" stroke="none" stroke-width="4"></circle>
-                            </svg>
-                        </div>
-                        <div class="skill-card__content">
-                            <div class="title">
-                                <h3>Prototypowanie i wireframing</h3>
-                            </div>
-                            <div class="paragraph">
-                                <p class="p_small">Biegłość w tworzeniu szkiców, makiet i prototypów interaktywnych w Figmie. Znajomość narzędzi takich jak Sketch, Adobe XD, InVision.</p>
-                            </div>
-                        </div>
+                        <h3>Projektowanie architektury informacji oraz user flow</h3>
+                        <p class="p_small">Umiejętność logicznego organizowania treści i ścieżek użytkownika, w celu ułatwienia nawigacji i osiąganiu celów w produkcie.</p>
                     </div>
 
                     <div class="skill-card">
-                        <div class="skill-card__icon">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#1C1C1C" stroke="none" stroke-width="4"></circle>
-                            </svg>
-                        </div>
-                        <div class="skill-card__content">
-                            <div class="title">
-                                <h3>Projektowanie style guide oraz design systemów</h3>
-                            </div>
-                            <div class="paragraph">
-                                <p class="p_small">Projektowanie przewodników stylu i bibliotek komponentów. Tworzenie i utrzymywanie spójnych i skalowalnych systemów designu, które zapewniają jednolitość i efektywność w projektowaniu produktów.</p>
-                            </div>
-                        </div>
+                        <h3>Prototypowanie i wireframing</h3>
+                        <p class="p_small">Biegłość w tworzeniu szkiców, makiet i prototypów interaktywnych w Figmie. Znajomość narzędzi takich jak Sketch, Adobe XD, InVision.</p>
                     </div>
 
                     <div class="skill-card">
-                        <div class="skill-card__icon">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#1C1C1C" stroke="none" stroke-width="4"></circle>
-                            </svg>
-                        </div>
-                        <div class="skill-card__content">
-                            <div class="title">
-                                <h3>Testowanie i iteracja</h3>
-                            </div>
-                            <div class="paragraph">
-                                <p class="p_small">Umiejętność przeprowadzania testów użyteczności i zbierania feedbacku. Zdolność do wprowadzania zmian i iteracji projektów na podstawie wyników testów.</p>
-                            </div>
-                        </div>
+                        <h3>Projektowanie responsywne</h3>
+                        <p class="p_small">Umiejętność projektowania responsywnego w tworzeniu interfejsów użytkownika, które automatycznie dostosowują się do różnych rozmiarów ekranów i urządze, niezależnie od tego, czy strona jest wyświetlana na komputerze, tablecie czy smartfonie.</p>
                     </div>
 
                     <div class="skill-card">
-                        <div class="skill-card__icon">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#1C1C1C" stroke="none" stroke-width="4"></circle>
-                            </svg>
-                        </div>
-                        <div class="skill-card__content">
-                            <div class="title">
-                                <h3>Projektowanie Front-end</h3>
-                            </div>
-                            <div class="paragraph">
-                                <p class="p_small">Znajomość narzędzi i technologii front-endowych, Umiejętność pisania kodu w technologi HTML5, CSS/Sass, Json, Javascript.</p>
-                            </div>
-                        </div>
+                        <h3>Projektowanie design systemów</h3>
+                        <p class="p_small">Posiadam doświadczenie w projektowaniu zaawansowanych komponentów i wzorców projektowych, które zapewniają jednolitość w działaniu oraz wyglądzie produktu. Ułatwiając projektantom i deweloperom w tworzeniu skalowalnych rozwiązań.</p>
                     </div>
+
+                    <div class="skill-card">
+                        <h3>Implementacja Dark/White mode</h3>
+                        <p class="p_small">Umiejętność projektowania Dark/White mode polegającą na tworzeniu interfejsów, które dostosowują się do różnych schematów kolorystycznych przy zachowaniu standarów WCAG 2.0 niezależnie od wybranego trybu.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Testowanie i iteracja</h3>
+                        <p class="p_small">Umiejętność przeprowadzania testów użyteczności i zbierania feedbacku. Zdolność do wprowadzania zmian i iteracji projektów na podstawie wyników testów.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Projektowanie Front-end</h3>
+                        <p class="p_small">Prototypowanie i wireframing
+                            Biegłość w tworzeniu szkiców, makiet i prototypów interaktywnych w Figmie. Znajomość narzędzi takich jak Sketch, Adobe XD, InVision.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -183,204 +148,72 @@
 
         <!-- projects section start -->
         <section id="projects" class="projects">
-            <h2>Przykładowe projekty:</h2>
-            <div class="projects__container">
-                <a href="/projects/stillsec_page.html">
-                    <div class="project project--1">
-                        <div class="project__image">
-                            <img src="/assets/projects/stillsec/banner.svg" alt="">                  
-                        </div>
-                        <div class="project__content">
-                            <h3>Projekt strony internetowej StillSec</h3>
-                            <div class="badges">
-                                <div class="badge badge--1">
-                                    <p class="caption">UX Design</p>
-                                </div>
-                                <div class="badge badge--1">
-                                    <p class="caption">UI Design</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">Figma</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">Website development</p>
-                                </div>
-                                
-                                <div class="badge badge--4">
-                                    <p class="caption">Responisve design</p>
+            <div class="container">
+                <div class="container__heading">
+                    <h2>Przykładowe projekty:</h2>
+                </div>
+
+                <div class="container__cards">
+                    <a href="/projects/stillsec_page.html">
+                        <div class="card-project">
+                            <div class="card-project__image">
+                                <img src="/assets/projects/stillsec/banner.svg" alt="">
+                            </div>
+                            <div class="card-project__content">
+                                <h3>Projekt strony internetowej StillSec</h3>
+                                <div class="badges">
+                                    <div class="badge">
+                                        <p class="caption">UX/UI Design</p>
+                                    </div>
+                                    <div class="badge">
+                                        <p class="caption">Figma</p>
+                                    </div>
+                                    <div class="badge">
+                                        <p class="caption">Resonsive web design</p>
+                                    </div>
+                                    <div class="badge">
+                                        <p class="caption">Front-end development</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                <a href="/projects/gymboost.html">
-                    <div class="project project--2">
-                        <div class="project__image">
-                            <img src="/assets/images/gymboost/cs-banner.jpg" alt="">                  
-                        </div>
-                        <div class="project__content">
-                            <h3>Gymboost</h3>
-                            <div class="badges">
-                                <div class="badge badge--1">
-                                    <p class="caption">UX Design</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">UI Design</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">Figma</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">Mobile app</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">iOS</p>
+                        
+                    </a>
+                    
+                    <a href="/projects/gymboost.html">
+                        <div class="card-project">
+                            <div class="card-project__image">
+                                <img src="/assets/images/gymboost/cs-banner.jpg" alt="">
+                            </div>
+                            <div class="card-project__content">
+                                <h3>Gymboost</h3>
+                                <div class="badges">
+                                    <div class="badge">
+                                        <p class="caption">UX/UI Design</p>
+                                    </div>
+                                    <div class="badge">
+                                        <p class="caption">Figma</p>
+                                    </div>
+                                    <div class="badge">
+                                        <p class="caption">Mobile application design</p>
+                                    </div>
+                                    <div class="badge">
+                                        <p class="caption">iOS</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-                
-            </div>
+                    </a>
+                </div>
         </section>
         <!-- projects section end -->
     </main>
 
-    <footer id="gymboost__footer" class="gymboost__footer">
-        <div class="footer__logo">
-            <h3>Bartosz Garstka</h3>
-            <p class="p_small">Warszawa, Polska</p>
-            <p class="p_small">Stronę wykonał: Bartosz Garstka</p>
-            
-        </div>
-        <div class="footer__sm">
-            <p class="p_small">Social media:</p>
-            <div class="sm__container">
-                <a href="https://www.linkedin.com/in/bartosz-garstka/" target="_blank" class="button-icon-secondary">
-                    <svg width="24" height="24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.93994 5.00002C6.93968 5.53046 6.72871 6.03906 6.35345 6.41394C5.97819 6.78883 5.46937 6.99929 4.93894 6.99902C4.40851 6.99876 3.89991 6.78779 3.52502 6.41253C3.15014 6.03727 2.93968 5.52846 2.93994 4.99802C2.94021 4.46759 3.15117 3.95899 3.52644 3.5841C3.9017 3.20922 4.41051 2.99876 4.94094 2.99902C5.47137 2.99929 5.97998 3.21026 6.35486 3.58552C6.72975 3.96078 6.94021 4.46959 6.93994 5.00002ZM6.99994 8.48002H2.99994V21H6.99994V8.48002ZM13.3199 8.48002H9.33994V21H13.2799V14.43C13.2799 10.77 18.0499 10.43 18.0499 14.43V21H21.9999V13.07C21.9999 6.90002 14.9399 7.13002 13.2799 10.16L13.3199 8.48002Z" stroke="none"/>
-                    </svg>    
-                </a>
-
-            </div>
+    <footer id="footer" class="footer">
+        <div class="footer__container">
+            <p class="p_small">&#9426;2024 Bartosz Garstka. Wszystkie prawa zastrzeżone.</p>
         </div>
     </footer>
-
-    <!-- <a href="projekt-1.html">
-                    <div class="project project--2">
-                        <div class="project__image">
-                            <img src="/assets/projects/musicHUB/banner.svg" alt="">                 
-                        </div>
-                        <div class="project__content">
-                            <h3>Music HUB</h3>
-                            <p class="p_small">Data realizacji projektu: 2022r.</p>
-                            <div class="badges">
-                                <div class="badge badge--1">
-                                    <p class="caption">UX Design</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">UI Design</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">Figma</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">Mobile app</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">iOS</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projekt-1.html">
-                    <div class="project project--2">
-                        <div class="project__image">
-                            <img src="/assets/projects/banner-placeholder.svg" alt="">                 
-                        </div>
-                        <div class="project__content">
-                            <h3>Audoc</h3>
-                            <p class="p_small">Projekt realizowany od 2021r.</p>
-                            <div class="badges">
-                                <div class="badge badge--1">
-                                    <p class="caption">UX Design</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">UI Design</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">Figma</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">Website app</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">Project management</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projekt-1.html">
-                    <div class="project project--2">
-                        <div class="project__image">
-                            <img src="/assets/projects/banner-placeholder.svg" alt="">                 
-                        </div>
-                        <div class="project__content">
-                            <h3>Dropper</h3>
-                            <p class="p_small">Data realizacji projektu: 2022r.</p>
-                            <div class="badges">
-                                <div class="badge badge--2">
-                                    <p class="caption">UI Design</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">User Interfejs Redisign</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">Figma</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">Website app</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">Cloud file sharing</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projekt-1.html">
-                    <div class="project project--2">
-                        <div class="project__image">
-                            <img src="/assets/projects/banner-placeholder.svg" alt="">                 
-                        </div>
-                        <div class="project__content">
-                            <h3>Who Call's</h3>
-                            <p class="p_small">Data realizacji projektu: 2021r.</p>
-                            <div class="badges">
-                                <div class="badge badge--2">
-                                    <p class="caption">UX Design</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">UI Design</p>
-                                </div>
-                                <div class="badge badge--2">
-                                    <p class="caption">Figma</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">Mobile app</p>
-                                </div>
-                                <div class="badge badge--3">
-                                    <p class="caption">Android</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a> -->
     
     <script src="js/script.js"></script>
 

@@ -6,7 +6,7 @@
 }
 .mark{
     background-color: var(--gymboost-primary);
-    padding: 4px;
+    padding: 4px 8px;
 }
 .mark__heading{
     color: var(--gymboost-secondary);
@@ -63,6 +63,10 @@
 }
 .gymboost__about .container__img{
     background-color: var(--gymboost-primary);
+}
+.gymboost__about .container__img img{
+    width: 150%;
+
 }
 .gymboost__about .container__text{
     margin-top: 32px;

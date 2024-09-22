@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="64" height="64" rx="10.6667" fill="#151414"/>
+<circle cx="15.333" cy="15.333" r="1.66667" fill="white" stroke="white" stroke-width="0.666667"/>
+<circle cx="48.6665" cy="15.333" r="1.66667" fill="white" stroke="white" stroke-width="0.666667"/>
+<path d="M15.333 15.333H48.6663" stroke="white" stroke-width="1.33333"/>
+<rect x="30.3333" y="13.6663" width="3.33333" height="3.33333" fill="white" stroke="white" stroke-width="0.666667"/>
+<rect x="13.6663" y="28.3328" width="3.33333" height="3.33333" fill="white" stroke="white" stroke-width="0.666667"/>
+<rect x="46.9998" y="28.3328" width="3.33333" height="3.33333" fill="white" stroke="white" stroke-width="0.666667"/>
+<path d="M15.333 29.9997V29.9997C15.333 21.8995 21.8995 15.333 29.9997 15.333H33.9997C42.0998 15.333 48.6663 21.8995 48.6663 29.9997V29.9997" stroke="white" stroke-width="1.33333"/>
+<rect x="26.6665" y="47.9995" width="10.6667" height="2.66667" fill="#0090DA"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.6663 46.6663H37.333L42.6663 37.333C40.6663 34.6663 36.6663 26.6663 35.333 21.333H32.6663V35.4468C33.4432 35.7213 33.9998 36.4622 33.9998 37.333C33.9998 38.4376 33.1044 39.333 31.9998 39.333C30.8953 39.333 29.9998 38.4376 29.9998 37.333C29.9998 36.4623 30.5563 35.7215 31.333 35.4469V21.333H28.6663C27.333 26.6663 23.333 34.6663 21.333 37.333L26.6663 46.6663Z" fill="#0090DA"/>
+</svg>

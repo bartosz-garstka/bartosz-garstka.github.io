@@ -1,24 +1,63 @@
-.button-lang{
-    display: inline-block;
-    padding: 9px 16px;
-    color: var(--color-on_surface);
-    border: var(--outline-primary);
-    cursor: pointer;
-}
-.button-lang:hover{
-    background-color: var(--color-surface-1-hover);
-}
-
 .button-link-primary{
     display: inline-block;
     padding: 8px 16px;
-    color: var(--color-on_surface);
     cursor: pointer;
-   
 }
 .button-link-primary:hover{
-    background-color: var(--color-surface-variant);
+    background-color: var(--color-surface-hover-primary);
 }
+.button-toggle-theme{
+    padding: 8px;
+    cursor: pointer;
+    border: var(--border-primary);
+}
+.button-toggle-theme:hover{
+    background-color: var(--color-surface-hover-primary);
+}
+.button-lang{
+    display: flex;
+    padding: 11px 18px;
+    border: var(--border-primary);
+    cursor: pointer;
+}
+.button-lang:hover{
+    background-color: var(--color-surface-hover-primary);
+}
+.button-toggle-menu{
+    display: inline-flex;
+    padding: 7px;
+    border: var(--border-primary);
+    cursor: pointer;
+}
+.button-toggle-menu:hover{
+    background-color: var(--color-surface-hover-primary);
+}
+.button-icon-primary{
+    display: flex;
+    padding: 7px;
+    border: var(--border-primary);
+    cursor: pointer;
+}
+.button-icon-primary:hover{
+    background-color: var(--color-surface-hover-primary);
+}
+.button-cta-primary{
+    padding: 16px 24px;
+    background-color: var(--color-surface-100);
+    cursor: pointer;    
+}
+.button-cta-primary:hover{
+    background-color: var(--color-surface-80);
+}
+.button-cta-secondary{
+    padding: 16px 24px;
+    background-color: var(--color-surface-0);
+    cursor: pointer;    
+}
+.button-cta-secondary:hover{
+    background-color: var(--color-surface-10);
+}
+
 
 .button-link-secondary{
     padding: 11px 16px;
@@ -39,27 +78,6 @@
     background-color: var(--color-surface-variant);
 }
 
-
-
-.button-icon-primary{
-    padding: 8px;
-    cursor: pointer;
-}
-.button-icon-primary:hover{
-    background-color: var(--color-surface-variant);
-}
-
-.button-icon-secondary{
-    display: inline-flex;
-    padding: 7px;
-    border: var(--outline-primary);
-    cursor: pointer;
-}
-.button-icon-secondary:hover{
-    padding: 8px;
-    background-color: var(--color-surface-variant);
-}
-
 .button-primary{
     display: inline-block;
     padding: 8px 24px;
@@ -72,33 +90,48 @@
     background-color: var(--color-secondary-hover);
 }
 
+/* Mobile devices */
+@media only screen and (orientation: portrait) and (max-width: 480px) {
+}
+  
+@media only screen and (orientation: landscape) and (min-width: 568px) and (max-width: 927px) {
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1920px){
+    .button-link-tertiary{
+        padding: 16px 32px;
+    }
+}
+
+/* Tablet devices */
+@media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px){
+}
+
+/* Tablet devices */
+@media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px){
+}
+
+/* Large devices */
+@media only screen and (orientation: portrait) and (min-width: 1025px){
+}
+
+/* Large devices */
+@media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1920px){
+}
+
 /* X-large devices */
 @media only screen and (min-width: 1921px){
     .button-link-primary{
-        padding: calc(12px + 0.1vw) calc(16px + 0.1vw);
-       
+        padding: calc(12px + 0.1vw) calc(16px + 0.1vw); 
     }
-    
-    .button-link-secondary{
-        padding: calc(11px + 0.1vw) calc(16px + 0.1vw);
+    .button-toggle-theme{
+        padding: calc(8px + 0.1vw);
     }
+    .button-lang{
 
-    .button-link-tertiary{
-        padding: calc(11px + 0.1vw) calc(16px + 0.1vw);
+        padding: calc(11px + 0.1vw) calc(18px + 0.1vw);
     }
-    
     .button-icon-primary{
-        padding: calc(8px + 0.1vw);
-    }
-
-    .button-icon-secondary{
         padding: calc(7px + 0.1vw);
-    }
-    .button-icon-secondary:hover{
-        padding: calc(8px + 0.1vw);
-    }
-    
-    .button-primary{
-        padding: calc(8px + 0.1vw) calc(24px + 0.1vw);
     }
 }

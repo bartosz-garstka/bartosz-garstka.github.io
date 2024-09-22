@@ -1,5 +1,5 @@
-section{
-    padding: 32px 4%;
+#stillsec{
+    padding: 48px 20%;
 }
 .list{
     list-style-type: decimal;
@@ -8,15 +8,37 @@ section{
     color: var(--color-on_surface);
 }
 
+.stillsec-main section{
+    margin: 0;
+}
+
+#stillsec__banner{
+    display: grid;
+    margin: 0;
+    padding: 0;
+}
+#stillsec__banner img{
+    padding: 0 20%;
+    justify-self: center;
+    margin: 64px 0;
+}
+.stillsec-mark{
+    color: var(--color-stillsec-on_primary);
+    background-color: var(--color-stillsec-primary);
+    padding: 4px 8px;
+}
 .p1-s1 .p1-s1__content p{
     padding-top: 16px;
-}
-.p1-s1 .p1-s1__button{
-    margin-top: 16px;
+    color: var(--color-text-primary);
 }
 
 .p1-s2 .p1-s2__content p{
     padding-top: 16px;
+    color: var(--color-text-primary);
+}
+
+.p1-s3 .list p{
+    color: var(--color-text-primary);
 }
 
 .p1-s4__cards, .p1-s5__cards{
@@ -27,7 +49,14 @@ section{
 }
 .p1-s4 .card, .p1-s5 .card{
     padding: 16px;
-    background-color: var(--color-surface-variant);
+    background-color: var(--color-surface-10);
+}
+.p1-s4 .card p{
+    color: var(--color-text-primary);
+}
+
+.p1-s5 .card p{
+    color: var(--color-text-primary);
 }
 
 .p1-s6 .container{
@@ -40,43 +69,89 @@ section{
 }
 .p1-s6 .p1-s6__features{
     padding: 16px;
-    background-color: var(--color-surface-variant);
+    background-color: var(--color-surface-10);
 }
 .p1-s6 .feature-card img{
     height: 40px;
 }
 .p1-s6 .feature-card__content h3{
     margin-top: 8px;
+    color: var(--color-text-primary);
 }
 .p1-s6 .feature-card__content p{
     padding-top: 8px;
+    color: var(--color-text-primary);
 }
 .p1-s6 .p1-s6__img{
     padding: 16px;
-    background-color: #0090DA;
+    background-color: var(--color-stillsec-primary);
 }
 .p1-s6 .p1-s6__img img{
     width: 100%;
 }
+
+.p1-s8 .list p{
+    color: var(--color-text-primary);
+}
 .p1-s9 .content{
     padding-top: 16px;
 }
+.p1-s9 .content p{
+    color: var(--color-text-primary);
+}
+
+.p1-s10 .button{
+    color: var(--color-text-secondary);
+}
+
+.stillsec__footer{
+    background-color: var(--color-surfce-0);
+    border-top: var(--border-divider-primary);
+}
+.stillsec__footer h3{
+    color: var(--color-text-primary);
+}
+.stillsec__footer p{
+    color: var(--color-text-primary-variant);
+    margin-top: 8px;
+}
 /* Mobile devices */
 @media only screen and (orientation: portrait) and (max-width: 480px) {
-
+    #stillsec{
+        padding: 32px 4%;
+    }
+    #stillsec__banner img{
+        padding: 0 4%;
+    }
+    #stillsec__banner img{
+        margin: 32px 0;
+    }
 }
   
 @media only screen and (orientation: landscape) and (min-width: 568px) and (max-width: 927px) {
-    section{
+    #stillsec{
         padding: 32px 6%;
+    }
+    #stillsec__banner img{
+        padding: 0 6%;
+    }
+    #stillsec__banner img{
+        margin: 32px 0;
     }
 }
 
 /* Tablet devices */
 @media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px){
-    section{
+    #stillsec{
         padding: 32px 8%;
     }
+    #stillsec__banner img{
+        padding: 0 8%;
+    }
+    #stillsec__banner img{
+        margin: 48px 0;
+    }
+
     .p1-s6 .p1-s6__img{
         padding: 24px;
     }
@@ -84,8 +159,14 @@ section{
 
 /* Tablet devices */
 @media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px){
-    section{
+    #stillsec{
         padding: 32px 8%;
+    }
+    #stillsec__banner img{
+        padding: 0 8%;
+    }
+    #stillsec__banner img{
+        margin: 48px 0;
     }
 
     .p1-s4__cards{
@@ -122,8 +203,11 @@ section{
 
 /* Large devices */
 @media only screen and (orientation: portrait) and (min-width: 1025px) {
-    section{
+    #stillsec{
         padding: 32px 12%;
+    }
+    #stillsec__banner img{
+        padding: 0 12%;
     }
 
     .p1-s4__cards{
@@ -159,9 +243,6 @@ section{
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1920px){
-    section{
-        padding: 32px 20%;
-    }
 
     .list{
         margin-top: 32px;
@@ -204,8 +285,12 @@ section{
 
 /* X-large devices */
 @media only screen and (min-width: 1921px){
-    section{
-        padding: 32px 20%;
+    #stillsec{
+        padding: calc(64px + 1vw) 24%;    
+    }
+    #stillsec__banner img{
+        padding: 0 calc(20% + 1vw);
+        margin: calc(64px + 1vw) 0;
     }
 
     .list{
