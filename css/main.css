@@ -26,7 +26,7 @@ html::-webkit-scrollbar-thumb{
     background: var(--color-primary);
 }
 
-section, footer{
+section{
     padding: 96px 24%;
 }
 
@@ -162,6 +162,7 @@ section, footer{
 }
 
 .footer{
+    padding: 32px 24%;
     background-color: var(--color-surface-0);
     border-top: var(--border-divider-primary);
 }
@@ -172,8 +173,11 @@ section, footer{
 
 /* Mobile devices */
 @media only screen and (orientation: portrait) and (max-width: 480px) {
-    section, footer{
+    section{
         padding: 32px 4%; 
+    }
+    .footer{
+        padding: 16px 4%;
     }
 
     .navbar .menu-list{
@@ -218,8 +222,11 @@ section, footer{
 }
   
 @media only screen and (orientation: landscape) and (min-width: 568px) and (max-width: 927px) {
-    section, footer{
+    section{
         padding: 32px 6%; 
+    }
+    .footer{
+        padding: 16px 6%;
     }
 
     .header{
@@ -247,8 +254,11 @@ section, footer{
   
 /* Tablet devices */
 @media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px){
-    section, footer{
+    section{
         padding: 64px 8%; 
+    }
+    .footer{
+        padding: 24px 8%;
     }
 
     .header{
@@ -274,8 +284,11 @@ section, footer{
 }
 /* Tablet devices */
 @media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px){
-    section, footer{
+    section{
         padding: 64px 8%; 
+    }
+    .footer{
+        padding: 24px 8%;
     }
 
     .header{
@@ -285,8 +298,11 @@ section, footer{
   
 /* Large devices */
 @media only screen and (orientation: portrait) and (min-width: 1025px) {
-    section, footer{
+    section{
         padding: 96px 12%; 
+    }
+    .footer{
+        padding: 24px 12%;
     }
 
     .header{
@@ -303,8 +319,11 @@ section, footer{
 
 /* X-large devices */
 @media only screen and (min-width: 1921px){
-    section, footer{
+    section{
         padding: calc(96px + 0.5vw) 30%; 
+    }
+    .footer{
+        padding: calc(24px + 0.5vw) 30%; 
     }
     
     .header{
