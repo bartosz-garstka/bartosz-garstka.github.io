@@ -1,6 +1,6 @@
 .button-link-primary{
     display: inline-block;
-    padding: 8px 16px;
+    padding: 16px 16px;
     cursor: pointer;
 }
 .button-link-primary:hover{
