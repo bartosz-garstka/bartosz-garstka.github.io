@@ -58,38 +58,6 @@
     background-color: var(--color-surface-10);
 }
 
-
-.button-link-secondary{
-    padding: 11px 16px;
-    border: var(--outline-primary);
-    color: var(--color-on_surface);
-    cursor: pointer;
-}
-.button-link-secondary:hover{
-    background-color: var(--color-surface-variant);
-}
-
-.button-link-tertiary{
-    padding: 12px 16px;
-    color: #0A0A0A;
-    background-color: #FFFFFF;
-}
-.button-link-tertiary:hover{
-    background-color: var(--color-surface-variant);
-}
-
-.button-primary{
-    display: inline-block;
-    padding: 8px 24px;
-    border: none;
-    background-color: var(--color-secondary);
-    cursor: pointer;
-    color: var(--color-on_secondary);
-}
-.button-primary:hover{
-    background-color: var(--color-secondary-hover);
-}
-
 /* Mobile devices */
 @media only screen and (orientation: portrait) and (max-width: 480px) {
 }
@@ -98,9 +66,7 @@
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1920px){
-    .button-link-tertiary{
-        padding: 16px 32px;
-    }
+
 }
 
 /* Tablet devices */

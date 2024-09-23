@@ -4,6 +4,10 @@
 .gymboost-main section{
     margin: 0;
 }
+
+#gymboost{
+    padding: 64px 20%;
+}
 .mark{
     background-color: var(--gymboost-primary);
     padding: 4px 8px;
@@ -212,6 +216,7 @@
 }
 
 .gymboost__footer{
+    padding: 48px 20%;
     background-color: var(--gymboost-color-surface-1);
     border-top: var(--gymboost-outline-primary);
 }
@@ -225,8 +230,11 @@
 
 /* Mobile devices */
 @media only screen and (orientation: portrait) and (max-width: 480px) {
-    .gymboost-main section{
-        margin: 0;
+    #gymboost{
+        padding: 32px 4%;
+    }
+    .gymboost__footer{
+        padding: 32px 4%;
     }
     .container__text{ 
         padding: 16px;
@@ -359,8 +367,11 @@
 }
   
 @media only screen and (orientation: landscape) and (min-width: 568px) and (max-width: 927px) {
-    .gymboost-main section{
-        margin: 0;
+    #gymboost{
+        padding: 32px 6%;
+    }
+    .gymboost__footer{
+        padding: 32px 6%;
     }
     .container__text{ 
         padding: 16px;
@@ -494,21 +505,29 @@
 
 /* Tablet devices */
 @media only screen and (orientation: portrait) and (min-width: 481px) and (max-width: 1024px){
-    .gymboost-main section{
-        margin: 0;
+    #gymboost{
+        padding: 48px 8%;
+    }
+    .gymboost__footer{
+        padding: 32px 8%;
     }
 }
 
 /* Tablet devices */
 @media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px){
-    .gymboost-main section{
-        margin: 0;
+    #gymboost{
+        padding: 48px 8%;
+    }
+    .gymboost__footer{
+        padding: 32px 8%;
     }
 }
 
 /* Large devices */
 @media only screen and (orientation: portrait) and (min-width: 1025px) {
-
+    .gymboost__footer{
+        padding: 32px 20%;
+    }
 }
 
 @media only screen and (orientation: landscape) and (min-width: 1281px) and (max-width: 1920px){
@@ -519,5 +538,12 @@
 @media only screen and (min-width: 1921px){
     section, footer{
         padding: calc(128px + 1vw) 24%;    
+    }
+
+    #gymboost{
+        padding: calc(48px + 1vw) 24%;
+    }
+    .gymboost__footer{
+        padding: calc(48px + 1vw) 24%;
     }
 }
