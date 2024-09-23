@@ -157,6 +157,7 @@ section{
 .projects .card-project .badges{
     display: flex;
     flex-wrap: wrap;
+    
     gap: 4px;
     margin-top: 8px;
 }
@@ -167,8 +168,10 @@ section{
 .projects .card-project .button-text-primary p{
     color: var(--color-text-primary);
 }
-.projects .card-project .button-text-primary img{
+.projects .card-project .button-text-primary svg{
     margin-left: 8px;
+    stroke: var(--color-text-primary);
+    stroke-width: 1.5;
 }
 .projects .card-project .badge{
     background-color: royalblue;
@@ -236,6 +239,9 @@ section{
         row-gap: 32px;
         margin-top: 16px;
     }
+    .projects .card-project .button-text-primary svg{
+        margin-left: 4px;
+    }
 }
   
 @media only screen and (orientation: landscape) and (min-width: 568px) and (max-width: 927px) {
@@ -266,6 +272,9 @@ section{
     }
     #toggle__menu{
         display: inline-block;
+    }
+    .projects .card-project .button-text-primary svg{
+        margin-left: 4px;
     }
 }
   

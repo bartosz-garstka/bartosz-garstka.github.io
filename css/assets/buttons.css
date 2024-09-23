@@ -60,7 +60,8 @@
     background-color: var(--color-surface-10);
 }
 .button-text-primary{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     cursor: pointer;    
 }
 
