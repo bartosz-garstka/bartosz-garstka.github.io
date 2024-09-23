@@ -7,12 +7,10 @@
     background-color: var(--color-surface-hover-primary);
 }
 .button-toggle-theme{
+    display: inline-block;
     padding: 8px;
     cursor: pointer;
     border: var(--border-primary);
-}
-.button-toggle-theme:hover{
-    background-color: var(--color-surface-hover-primary);
 }
 .button-lang{
     display: flex;
@@ -24,7 +22,6 @@
     background-color: var(--color-surface-hover-primary);
 }
 .button-toggle-menu{
-    display: inline-flex;
     padding: 7px;
     border: var(--border-primary);
     cursor: pointer;

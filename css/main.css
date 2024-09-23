@@ -215,7 +215,7 @@ section{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     #toggle__menu{
-        display: inline-block;
+        display: inline-flex;
         stroke-width: 1.5;
         stroke: var(--color-text-primary);
     }
@@ -271,7 +271,7 @@ section{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     #toggle__menu{
-        display: inline-block;
+        display: inline-flex;
     }
     .projects .card-project .button-text-primary svg{
         margin-left: 4px;
@@ -305,7 +305,7 @@ section{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     #toggle__menu{
-        display: inline-block;
+        display: inline-flex;
     }
 }
 /* Tablet devices */
