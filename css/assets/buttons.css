@@ -59,6 +59,10 @@
 .button-cta-secondary:hover{
     background-color: var(--color-surface-10);
 }
+.button-text-primary{
+    display: inline-block;
+    cursor: pointer;    
+}
 
 /* Mobile devices */
 @media only screen and (orientation: portrait) and (max-width: 480px) {

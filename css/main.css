@@ -143,6 +143,13 @@ section{
     column-gap: 64px;
     margin-top: 32px;
 }
+.projects .container__cards a:hover{
+    background-color: var(--color-surface-10);
+}
+.projects .card-project{
+    padding: 16px;
+    
+}
 .projects .card-project h3{
     color: var(--color-text-primary);
     margin-top: 16px;
@@ -153,8 +160,18 @@ section{
     gap: 4px;
     margin-top: 8px;
 }
+.projects .card-project .button-text-primary{
+    display: flex;
+    margin-top: 16px;
+}
+.projects .card-project .button-text-primary p{
+    color: var(--color-text-primary);
+}
+.projects .card-project .button-text-primary img{
+    margin-left: 8px;
+}
 .projects .card-project .badge{
-    background-color: dodgerblue;
+    background-color: royalblue;
     padding: 4px 8px;
 }
 .projects .card-project .badges p{
