@@ -288,7 +288,7 @@ section{
     }
     .about .container__content h3{
         font-size: 12px;
-        margin-top: 8px;
+        margin-top: 12px;
     }
     .about .container__content p{
         margin-top: 0;
@@ -347,7 +347,7 @@ section{
         background-color: none;
     }
     .about .container__content h3{
-        margin-top: 8px;
+        margin-top: 12px;
     }
     .about .container__content p{
         margin-top: 16px;
