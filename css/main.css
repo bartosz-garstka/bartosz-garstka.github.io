@@ -362,6 +362,11 @@ section{
         justify-self: end;
         align-self: start;
     }
+    .skills .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+    }
     .projects .card-project .button-text-primary svg{
         margin-left: 4px;
     }
