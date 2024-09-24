@@ -245,10 +245,16 @@ section{
     .navbar .menu-list.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
+    #theme-toggle:hover{
+        background-color: none;
+    }
     #toggle__menu{
         display: inline-flex;
         stroke-width: 1.5;
         stroke: var(--color-text-primary);
+    }
+    .button-toggle-menu:hover{
+        background-color: none;
     }
     .mark-heading-primary{
         padding: 4px 8px;    
@@ -331,8 +337,14 @@ section{
     .navbar .menu-list.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
+    #theme-toggle:hover{
+        background-color: none;
+    }
     #toggle__menu{
         display: inline-flex;
+    }
+    .button-toggle-menu:hover{
+        background-color: none;
     }
     .about .container__content h3{
         margin-top: 8px;
@@ -371,8 +383,14 @@ section{
     .navbar .menu-list.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
+    #theme-toggle:hover{
+        background-color: none;
+    }
     #toggle__menu{
         display: inline-flex;
+    }
+    .button-toggle-menu:hover{
+        background-color: none;
     }
 }
 /* Tablet devices */
