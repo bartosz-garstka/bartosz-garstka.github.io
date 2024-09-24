@@ -346,11 +346,21 @@ section{
     .button-toggle-menu:hover{
         background-color: none;
     }
+    .about .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
+        row-gap: 0;
+    }
     .about .container__content h3{
         margin-top: 12px;
     }
     .about .container__content p{
         margin-top: 16px;
+    }
+    .about .container__img{
+        width: 75%;
+        justify-self: end;
+        align-self: start;
     }
     .projects .card-project .button-text-primary svg{
         margin-left: 4px;
@@ -392,6 +402,18 @@ section{
     .button-toggle-menu:hover{
         background-color: none;
     }
+    .about .container__content{
+        column-gap: 24px;
+    }
+    .skills .container__content{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+    }
+    .projects .container__cards{
+        column-gap: 32px;
+        margin-top: 32px;
+    }
 }
 /* Tablet devices */
 @media only screen and (orientation: landscape) and (min-width: 928px) and (max-width: 1280px){
@@ -419,6 +441,7 @@ section{
     .header{
         padding: 16px 12%; 
     }
+    
 }
 
 /* Large devices */
