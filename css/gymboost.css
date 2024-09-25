@@ -351,12 +351,30 @@
     .gymboost__ia .container__img{
         margin-top: 16px;
     }
-
+    
     .gymboost__wireframe .container__text{
         margin-top: 24px;
     }
     .gymboost__wireframe .container__img{
         margin-top: 16px;
+    }
+    .gymboost__wireframe .figma__link{
+        padding: 16px 4%;
+        margin-top: 32px;
+        border-radius: 8px;
+        gap: 8px;
+    }
+    .gymboost__wireframe .figma__link .content{
+        gap: 8px;
+    }
+    .gymboost__wireframe .figma__link h2{
+        font-size: 14px;
+    }
+    .gymboost__wireframe .figma__link img{
+        height: 40px;
+    }
+    .button-cta-secondary{
+        padding: 8px 16px;   
     }
     
     .gymboost__branding .container__text{
@@ -495,6 +513,17 @@
     .gymboost__wireframe .container__img{
         margin-top: 16px;
     }
+    .gymboost__wireframe .figma__link{
+        padding: 32px 6%;
+        margin-top: 48px;
+        border-radius: 16px;
+    }
+    .gymboost__wireframe .figma__link .content{
+        gap: 24px;
+    }
+    .gymboost__wireframe .figma__link img{
+        height: 64px;
+    }
     
     .gymboost__branding .container__text{
         margin-top: 24px;
@@ -527,6 +556,18 @@
     }
     .gymboost__footer{
         padding: 32px 8%;
+    }
+    .gymboost__wireframe .figma__link{
+        padding: 32px 8%;
+        margin-top: 64px;
+        border-radius: 24px;
+        gap: 32px;
+    }
+    .gymboost__wireframe .figma__link .content{
+        gap: 24px;
+    }
+    .gymboost__wireframe .figma__link img{
+        height: 80px;
     }
 }
 
