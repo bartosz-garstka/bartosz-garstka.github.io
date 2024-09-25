@@ -100,6 +100,7 @@ section{
 }
 .header #icon-button{
     fill: var(--color-text-primary);
+    
 }
 .about{
     background-color: var(--color-surface-0);
@@ -487,5 +488,9 @@ section{
     
     .header{
         padding: calc(16px + 0.5vw) 30%;
+    }
+    .header #icon-button{
+        width: calc(24px + 0.25vw);
+        height: calc(24px + 0.25vh);
     }
 }

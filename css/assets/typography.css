@@ -193,5 +193,8 @@ h3{
     .caption{
         font-size: calc(14px + 0.1vw);
     }
+    .link{
+        font-size: calc(16px + 0.1vw);
+    }
 }
 
