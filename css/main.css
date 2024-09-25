@@ -80,12 +80,14 @@ section{
 }
 .mark-heading-primary{
     color: var(--color-basic-surface-0);
-    background-color: var(--color-primary);
+    background-color: #84E12E;
+    background-image: linear-gradient(319deg, #84E12E 0%, #61fa74 37%, #1cfdd6 100%);
     padding: 6px 12px;    
 }
 .mark-heading-secondary{
     color: var(--color-basic-surface-0);
-    background-color: var(--color-primary);
+    background-color: #84E12E;
+    background-image: linear-gradient(319deg, #84E12E 0%, #61fa74 37%, #1cfdd6 100%);
     padding: 4px 8px;    
 }
 .header .header__button{
@@ -106,6 +108,7 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 64px;
+    row-gap: 32px;
 }
 .about .content__heading{
     grid-column: 1/2;
@@ -114,6 +117,9 @@ section{
 .about .content__paragraph{
     grid-column: 1/2;
     grid-row: 2/3;
+    padding: 16px;
+    background-color: #84E12E;
+    background-image: linear-gradient(319deg, #84E12E 0%, #61fa74 37%, #1cfdd6 100%);
 }
 .about .container__content h1{
     color: var(--color-text-primary);
@@ -123,15 +129,14 @@ section{
     color: var(--color-text-primary);
 }
 .about .container__content p{
-    margin-top: 32px;
-    color: var(--color-text-primary);
+    color: var(--color-basic-surface-0);
 }
 .about .container__img{
     grid-column: 2/3;
     grid-row: 1/3;
     width: 75%;
     justify-self: end;
-    align-self: center;
+    align-self: self-start;
 }
 
 .skills{
@@ -151,8 +156,16 @@ section{
     padding: 16px;
     border: var(--border-primary-variant);
 }
+.skills .skill-card .icon{
+    stroke: var(--color-text-primary);
+}
+.skills .skill-card .icon svg{
+    fill: var(--color-surface-100);
+    stroke: var(--color-text-primary);
+}
 .skills .skill-card h3{
     color: var(--color-text-primary);
+    margin-top: 8px;
 }
 .skills .skill-card p{
     margin-top: 8px;
@@ -264,9 +277,8 @@ section{
     }
     .about .container__content{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-auto-rows: auto;
         column-gap: 0;
-        row-gap: 0;
     }
     .about .content_heading{
         grid-column: 1/2;
@@ -275,6 +287,7 @@ section{
     .about .content__paragraph{
         grid-column: 1/3;
         grid-row: 2/3;
+        
     }
     .about .container__img{
         grid-column: 2/3;
@@ -298,6 +311,9 @@ section{
         column-gap: 0;
         row-gap: 16px;
         margin-top: 16px;
+    }
+    .skills .skill-card h3{
+        margin-top: 4px;
     }
 
     .projects .container__cards{
@@ -349,13 +365,12 @@ section{
     .about .container__content{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 0;
-        row-gap: 0;
     }
     .about .container__content h3{
         margin-top: 12px;
     }
     .about .container__content p{
-        margin-top: 16px;
+        margin-top: 0;
     }
     .about .container__img{
         width: 75%;
@@ -366,6 +381,9 @@ section{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 24px;
         row-gap: 24px;
+    }
+    .skills .skill-card h3{
+        margin-top: 4px;
     }
     .projects .card-project .button-text-primary svg{
         margin-left: 4px;

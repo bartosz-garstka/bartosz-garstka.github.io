@@ -190,6 +190,23 @@
 .gymboost__wireframe .container__img{
     margin-top: 64px;
 }
+.gymboost__wireframe .figma__link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gymboost-primary);
+    padding: 64px 96px;
+    margin-top: 96px;
+    border-radius: 32px;
+}
+.gymboost__wireframe .figma__link .content{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.gymboost__wireframe .figma__link h2{
+    color: var(--gymboost-secondary);
+}
 
 .gymboost__branding .container__text{
     margin-top: 32px;
