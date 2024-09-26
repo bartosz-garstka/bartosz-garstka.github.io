@@ -108,6 +108,7 @@ section{
 .about .container__content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
     column-gap: 64px;
     row-gap: 32px;
 }
@@ -118,6 +119,7 @@ section{
 .about .content__paragraph{
     grid-column: 1/2;
     grid-row: 2/3;
+    align-self: start;
     padding: 16px;
     background-color: #84E12E;
     background-image: linear-gradient(319deg, #84E12E 0%, #61fa74 37%, #1cfdd6 100%);
@@ -368,6 +370,22 @@ section{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 0;
         row-gap: 16px;
+    }
+    .about .content_heading{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .about .content__paragraph{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        
+    }
+    .about .container__img{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 75%;
+        justify-self: end;
+        align-self: start;
     }
     .about .container__content h3{
         margin-top: 12px;
