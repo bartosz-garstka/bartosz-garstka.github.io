@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Sprawdź zapisany motyw z localStorage lub ustaw domyślny motyw
     const savedTheme = localStorage.getItem('theme');
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: light)').matches;
 
     // Ustaw motyw w zależności od zapisanych preferencji
     if (savedTheme) {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Nasłuchuj zmian preferencji motywu w przeglądarce
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (event) => {
         if (!localStorage.getItem('theme')) {
             setTheme(event.matches ? 'dark' : 'light');
         }
