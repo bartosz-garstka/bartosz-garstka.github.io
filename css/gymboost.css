@@ -65,12 +65,13 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 64px;
 }
-.gymboost__about .container__img{
+.gymboost__about .container .container__img{
+    justify-self: center;
     background-color: var(--gymboost-primary);
+    padding: 32px;
 }
 .gymboost__about .container__img img{
-    width: 150%;
-
+    width: 50%;
 }
 .gymboost__about .container__text{
     margin-top: 32px;
