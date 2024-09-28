@@ -68,10 +68,12 @@ section{
     fill: none;
     stroke: var(--color-text-primary);
     stroke-width: 1.5;
-    transition: opacity 0.5s ease;
-    stroke-dasharray: 1000; /* Ustaw odpowiednią wartość, większą niż długość ścieżki */
-    stroke-dashoffset: 1000;
-    animation: draw 7s linear forwards;
+    
+}
+@keyframes draw {
+    to {
+      stroke-dashoffset: 1;
+    }
 }
 .mark-heading-primary{
     color: var(--color-basic-surface-0);
