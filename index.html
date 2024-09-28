@@ -21,22 +21,17 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLW9T78BTN"></script>
     <script src="js/analitics.js"></script>
-    <!-- Sentry -->
-    <script
-    src="https://js-de.sentry-cdn.com/04bd54d92f1655c8e406c43959684949.min.js"
-    crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for Bartosz Garstka - Portfolio -->
     <script>
-        Sentry.onLoad(function() {
-          Sentry.init({
-              // Tracing
-              tracesSampleRate: 1.0, // Capture 100% of the transactions
-              // Session Replay
-              replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
-              replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
-            });
-        });
-      </script>
-      <script>myUndefinedFunction()</script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:5151707,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
