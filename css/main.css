@@ -73,11 +73,6 @@ section{
     stroke-dashoffset: 1000;
     animation: draw 7s linear forwards;
 }
-@keyframes draw {
-    to {
-      stroke-dashoffset: 0;
-    }
-}
 .mark-heading-primary{
     color: var(--color-basic-surface-0);
     background-color: #84E12E;
