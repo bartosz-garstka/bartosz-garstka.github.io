@@ -8,7 +8,7 @@
 }
 .button-toggle-theme{
     display: inline-block;
-    padding: 8px;
+    padding: 7px;
     cursor: pointer;
     border: var(--border-primary);
 }

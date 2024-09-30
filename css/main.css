@@ -43,8 +43,12 @@ section{
     z-index: 999;
     padding: 8px 4%;
 }
-.header .header__logo p{
-    color: var(--color-text-primary);
+.header .header__logo svg{
+    width: 40px;
+    fill: none;
+    stroke: var(--color-text-primary);
+    stroke-miterlimit: 10;
+    stroke-width: 10px;
 }
 .navbar .menu-list{
     display: flex;
