@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Skrypt ukrywający preloader i pokazujący stronę po załadowaniu
+    window.addEventListener('load', function() {
+    // Ukryj preloader
+    document.getElementById('preloader').style.display = 'none';
+    // Pokaż zawartość strony
+    document.getElementById('content').style.display = 'block';
+    });
+
     const themeToggleButton = document.getElementById('theme-toggle');
     const iconSun = document.getElementById('icon-sun');
     const iconMoon = document.getElementById('icon-moon');

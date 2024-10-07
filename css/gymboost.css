@@ -66,9 +66,13 @@
     column-gap: 64px;
 }
 .gymboost__about .container .container__img{
+    align-self: center;
     justify-self: center;
     background-color: var(--gymboost-primary);
     padding: 32px;
+}
+.gymboost__about .container .container__img img{
+    place-self: center stretch;
 }
 .gymboost__about .container__img img{
     width: 50%;

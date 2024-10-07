@@ -8,17 +8,17 @@ Readex Pro is a variable font with these axes:
   wght
 
 This means all the styles are contained in a single file:
-  Readex_Pro/ReadexPro-VariableFont_HEXP,wght.ttf
+  ReadexPro-VariableFont_HEXP,wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
 in those cases you can use the static font files for Readex Pro:
-  Readex_Pro/static/ReadexPro-ExtraLight.ttf
-  Readex_Pro/static/ReadexPro-Light.ttf
-  Readex_Pro/static/ReadexPro-Regular.ttf
-  Readex_Pro/static/ReadexPro-Medium.ttf
-  Readex_Pro/static/ReadexPro-SemiBold.ttf
-  Readex_Pro/static/ReadexPro-Bold.ttf
+  static/ReadexPro-ExtraLight.ttf
+  static/ReadexPro-Light.ttf
+  static/ReadexPro-Regular.ttf
+  static/ReadexPro-Medium.ttf
+  static/ReadexPro-SemiBold.ttf
+  static/ReadexPro-Bold.ttf
 
 Get started
 -----------
