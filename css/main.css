@@ -33,7 +33,7 @@ section{
     justify-content: space-between;
     align-items: center;
     border-bottom: var(--border-divider-primary);
-    background-color: var(--color-nav-surface);
+    background-color: var(--color-surface-primary);
     backdrop-filter: blur(24px);
     box-shadow: var(--box-shadow-primary);
     z-index: 999;
