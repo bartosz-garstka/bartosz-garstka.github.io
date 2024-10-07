@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Sprawdź zapisany motyw z localStorage lub ustaw domyślny motyw
     const savedTheme = localStorage.getItem('theme');
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: light)').matches;
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     // Ustaw motyw w zależności od zapisanych preferencji
     if (savedTheme) {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     themeToggleButton.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'dark';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         setTheme(newTheme);
     });
 
