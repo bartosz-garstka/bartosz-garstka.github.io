@@ -52,6 +52,12 @@ section{
 .navbar .menu-list p{
     color: var(--color-text-primary);
 }
+#icon-logo{
+    fill: none;
+    stroke: var(--color-text-primary);
+    stroke-width: 6;
+}
+
 #toggle__menu{
     display: none;
     stroke-width: 1.5;
