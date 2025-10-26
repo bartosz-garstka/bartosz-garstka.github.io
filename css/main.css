@@ -169,6 +169,7 @@ section{
     fill: var(--color-on_surface-secondary);
     stroke: var(--color-on_surface-secondary);
 }
+
 .skills .skill-card h4{
     color: var(--color-text-primary);
     margin-top: 8px;
