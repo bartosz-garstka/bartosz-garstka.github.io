@@ -1,6 +1,6 @@
 .button-link-primary{
     display: inline-block;
-    padding: 16px 16px;
+    padding: 15px 16px;
     cursor: pointer;
 }
 .button-link-primary:hover{
@@ -8,13 +8,13 @@
 }
 .button-toggle-theme{
     display: inline-block;
-    padding: 7px;
+    padding: 11px;
     cursor: pointer;
     border: var(--border-primary);
 }
 .button-lang{
     display: flex;
-    padding: 11px 18px;
+    padding: 14px 18px;
     border: var(--border-primary);
     cursor: pointer;
 }
@@ -31,7 +31,7 @@
 }
 .button-icon-primary{
     display: flex;
-    padding: 7px;
+    padding: 11px;
     border: var(--border-primary);
     cursor: pointer;
 }
