@@ -22,7 +22,7 @@
     background-color: var(--color-surface-hover-primary);
 }
 .button-toggle-menu{
-    padding: 7px;
+    padding: 11px;
     border: var(--border-primary);
     cursor: pointer;
 }
