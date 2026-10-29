@@ -215,7 +215,6 @@ a:focus-visible, button:focus-visible {
   gap: 8px;
   padding-top: 24px;
   padding-bottom: calc(32px + env(safe-area-inset-bottom, 0px));
-  border-top: 1px solid var(--line);
 }
 
 /* ---------- Header ---------- */
