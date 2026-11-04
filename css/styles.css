@@ -327,7 +327,7 @@ a:focus-visible, button:focus-visible {
 
 /* ---------- Projects ---------- */
 .project-item { display: flex; min-width: 0; }
-.project-card { width: 100%; }
+.project-card { width: 100%; color: inherit; text-decoration: none; }
 .project-image { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; }
 .project-caption { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
 

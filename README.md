@@ -47,7 +47,7 @@ Docker, nginx i konfiguracja Apache nie są potrzebne. Nie jest wymagany własny
 ## Przed udostępnieniem portfolio w CV
 
 - Uzupełnij pozostałe dane kontaktowe i CV do pobrania.
-- Karty projektów są podglądami bez linków. Po dodaniu case studies podłącz je do odpowiednich podstron.
+- Karty projektów otwierają puste pliki `projects/project-1.html`, `projects/project-2.html` i `projects/project-3.html` w nowej karcie. Uzupełnij je treścią case studies.
 - Potwierdź informacje o doświadczeniu.
 - Sprawdź wersję mobilną, oba motywy i obsługę klawiaturą.
 - Wygeneruj kod QR dla ustalonego, działającego adresu strony.
