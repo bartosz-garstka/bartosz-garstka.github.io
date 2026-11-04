@@ -314,7 +314,7 @@ a:focus-visible, button:focus-visible {
 }
 .skill-icon { color: var(--accent); margin-top: 2px; }
 @media (hover: hover) {
-  .skill-item:hover { background: var(--accent-soft); cursor: pointer; }
+  .skill-item:hover { background: var(--accent-soft); }
 }
 .skill-copy h3,
 .project-caption h3 {
@@ -328,13 +328,9 @@ a:focus-visible, button:focus-visible {
 
 /* ---------- Projects ---------- */
 .project-item { display: flex; min-width: 0; }
-.project-card { width: 100%; color: inherit; text-decoration: none; }
-.project-card:focus-visible { outline-offset: -4px; }
+.project-card { width: 100%; }
 .project-image { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; }
 .project-caption { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
-.project-arrow { color: var(--accent); flex: none; }
-.case-back { display: inline-block; color: var(--muted); margin-bottom: 24px; }
-.case-back:hover { color: var(--accent); cursor: pointer; }
 
 /* ---------- Contact ---------- */
 .links-list { border-top: 1px solid var(--line); }
@@ -367,7 +363,9 @@ a:focus-visible, button:focus-visible {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 719px) {
-  .hero h1 { font-size: 36px; }
+  .skill-copy h3, .project-caption h3 { font-size: 18px; }
+  .section-head h2 { font-size: 24px; }
+  .hero h1 { font-size: 32px; }
   .lede { font-size: 16px; }
   #hero, #projects-h, #contact-h { scroll-margin-top: 180px; }
   .topbar {
@@ -413,9 +411,15 @@ a:focus-visible, button:focus-visible {
 }
 
 @media (min-width: 1024px) {
+  .dim { font-size: 16px; }
+  .section-head h2 { font-size: 28px; }
   :root { --gutter: 32px; --section-space: 48px; --card-padding: 24px; }
   .hero { padding-block: 48px 56px; }
   .skills-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 719px) {
+  .dim { font-size: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

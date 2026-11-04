@@ -4,11 +4,7 @@ const copyrightYear = document.getElementById("copyright-year");
 if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
 
 // Bind the dictionary to text elements on the current page.
-const pageTranslations = {
-  ...TRANSLATIONS.common,
-  ...TRANSLATIONS[document.body.dataset.page]
-};
-const translatedElements = Object.entries(pageTranslations).flatMap(([selector, translations]) =>
+const translatedElements = Object.entries(TRANSLATIONS).flatMap(([selector, translations]) =>
   Array.from(document.querySelectorAll(selector), (element) => ({ element, translations }))
 );
 // Cache metadata and titles before the initial language is applied.
@@ -52,3 +48,14 @@ try {
   if (savedLanguage === "en" || savedLanguage === "pl") initialLanguage = savedLanguage;
 } catch { /* Use Polish when storage is unavailable. */ }
 setLanguage(initialLanguage);
+
+// Track project cards using stable event names shared by both languages.
+const projectsList = document.querySelector(".projects-list");
+if (projectsList) {
+  projectsList.addEventListener("click", (event) => {
+    const card = event.target.closest("[data-analytics-event]");
+    if (card && projectsList.contains(card) && typeof window.clarity === "function") {
+      window.clarity("event", card.dataset.analyticsEvent);
+    }
+  });
+}
