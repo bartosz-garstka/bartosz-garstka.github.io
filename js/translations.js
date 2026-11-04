@@ -104,5 +104,7 @@ const TRANSLATIONS = {
   "#contact-h": {
     "pl": "Znajdziesz mnie tutaj",
     "en": "Find me online"
-  }
+  },
+  ".project-pending": { "pl": "Opis projektu w przygotowaniu.", "en": "Project description coming soon." },
+  ".project-back": { "pl": "Wróć do projektów", "en": "Back to projects" }
 };

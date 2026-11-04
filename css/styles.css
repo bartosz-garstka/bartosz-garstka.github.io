@@ -122,7 +122,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 html { background: var(--bg); -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-#hero, #projects-h, #contact-h { scroll-margin-top: 128px; }
+#main, #hero, #projects-h, #contact-h { scroll-margin-top: 128px; }
 
 body {
   margin: 0;
@@ -152,14 +152,14 @@ a:focus-visible, button:focus-visible {
 }
 
 .skip-link {
-  position: absolute;
+  position: fixed;
   left: var(--gutter);
   top: -100px;
   padding: 8px 12px;
   background: var(--ink);
   color: var(--bg);
   font-size: 14px;
-  z-index: 10;
+  z-index: 100;
 }
 .skip-link:focus { top: 12px; }
 
@@ -268,7 +268,7 @@ a:focus-visible, button:focus-visible {
   align-items: center;
   gap: 8px;
   margin-top: 12px;
-  color: var(--accent);
+  color: #f04468;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.08em;
@@ -365,7 +365,7 @@ a:focus-visible, button:focus-visible {
   .section-head h2 { font-size: 24px; }
   .hero h1 { font-size: 32px; }
   .lede { font-size: 16px; }
-  #hero, #projects-h, #contact-h { scroll-margin-top: 180px; }
+  #main, #hero, #projects-h, #contact-h { scroll-margin-top: 180px; }
   .topbar {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
@@ -423,4 +423,14 @@ a:focus-visible, button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
+}
+
+/* Accessible links on project placeholder pages. */
+.project-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 24px;
+  color: var(--ink);
+  text-underline-offset: 0.2em;
 }
