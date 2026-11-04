@@ -250,6 +250,16 @@ a:focus-visible, button:focus-visible {
 /* ---------- Hero ---------- */
 .hero { padding-block: 32px 40px; }
 .hero .eyebrow { margin-bottom: 16px; }
+.hero h1 .hero-greeting {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  text-wrap: wrap;
+}
+.hero-name { display: block; }
 
 .name-block { display: inline-block; max-width: 100%; }
 

@@ -18,7 +18,7 @@ const TRANSLATIONS = {
     "en": "Contact"
   },
 
-  ".hero > .eyebrow": {
+  ".hero-greeting": {
     "pl": "Cześć, jestem",
     "en": "Hello, I'm"
   },
