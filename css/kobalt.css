@@ -184,6 +184,7 @@
 .kobalt-closing { background: var(--kobalt-dark); color: #f3f5fc; }
 .kobalt-closing .kobalt-label { color: #ccd9ff; }
 .kobalt-closing .kobalt-lead { color: #b7c2d9; }
+.kobalt-summary-copy p + p { margin-top: 1lh; }
 .kobalt-closing .kobalt-section-head { max-width: none; }
 .kobalt-cta { padding: 16px; border-radius: 10px; font-size: 18px; line-height: 24px; background: var(--kobalt-periwinkle); color: #12172b; }
 .kobalt-cta:hover { background: #d4dcff; }
