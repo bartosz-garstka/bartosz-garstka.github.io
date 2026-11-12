@@ -307,6 +307,7 @@ a:focus-visible, button:focus-visible {
 .skill-icon { color: var(--accent); margin-top: 2px; }
 @media (hover: hover) {
   .skill-item:hover { background: var(--accent-soft); }
+  [aria-labelledby="skills-h"] .skill-item:hover { cursor: pointer; }
 }
 .skill-copy h3,
 .project-caption h3 {
