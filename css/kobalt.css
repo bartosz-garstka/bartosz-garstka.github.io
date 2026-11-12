@@ -350,13 +350,21 @@
   .kobalt-exhibit { padding: 20px; border-radius: 20px; }
   .kobalt-field { font-size: 16px; line-height: 20px; }
   .kobalt-field input { min-height: 56px; padding-inline: 16px; }
-  .kobalt-preview .kobalt-phone { width: min(100%, 124px); }
   .kobalt-page .kobalt-phone { --phone-aspect: 160 / 356; --phone-radius: 12px; }
+}
+
+@media (720px <= width < 1200px) {
+  [aria-labelledby="flow-title"] > .page { padding-inline: 48px; }
+  [aria-labelledby="flow-title"] .kobalt-section-head h2 { margin-bottom: 16px; }
+  .kobalt-step h3 { min-block-size: 2lh; }
+  .kobalt-preview { padding: 10px; }
+  .kobalt-preview .kobalt-phone { width: min(100%, 136px); }
   .kobalt-page .kobalt-phone.is-flow {
-    --phone-aspect: 124 / 276;
-    --phone-radius: 12px;
+    --phone-aspect: 136 / 288;
+    --phone-radius: 18px;
     background: #26304d;
   }
+  .is-flow .kobalt-phone-action.is-loading { opacity: 1; }
 }
 
 @media (min-width: 1200px) {
