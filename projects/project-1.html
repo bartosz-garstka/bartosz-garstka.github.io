@@ -3,29 +3,758 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title data-en="Project 1 — Bartosz Garstka">Projekt 1 — Bartosz Garstka</title>
+    <title data-kobalt="page-title">
+      Kobalt – Jedna marka. Dwie platformy. | Bartosz Garstka
+    </title>
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#0E1217" />
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <script src="../js/translations.js" defer></script>
+    <link rel="stylesheet" href="../css/kobalt.css" />
+    <script src="../js/kobalt-translations.js" defer></script>
     <script src="../js/main.js" defer></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main">Przejdź do treści</a>
-    <div class="page">
-      <header class="topbar">
-        <span class="eyebrow">Bartosz Garstka</span>
-        <div class="language-switch" role="group" aria-label="Język strony" hidden>
-          <button type="button" data-language="pl" lang="pl" aria-label="PL — Polski" aria-pressed="true">PL</button>
-          <button type="button" data-language="en" lang="en" aria-label="EN — English" aria-pressed="false">EN</button>
+  <body class="kobalt-page">
+    <a data-kobalt="skip" class="skip-link" href="#main">Przejdź do treści</a>
+    <header class="kobalt-header">
+      <nav
+        class="page kobalt-nav"
+        aria-label="Nawigacja główna"
+        data-kobalt-label="navigation"
+      >
+        <a class="header-logo eyebrow" href="../index.html">
+          <img src="../images/icons/logo.svg" width="44" height="44" alt="" />
+          <span>Bartosz Garstka</span>
+        </a>
+        <div
+          class="language-switch"
+          role="group"
+          aria-label="Język strony"
+          hidden
+        >
+          <button
+            type="button"
+            data-language="pl"
+            lang="pl"
+            aria-label="PL — Polski"
+            aria-pressed="true"
+          >
+            PL
+          </button>
+          <button
+            type="button"
+            data-language="en"
+            lang="en"
+            aria-label="EN — English"
+            aria-pressed="false"
+          >
+            EN
+          </button>
         </div>
-      </header>
-      <main id="main" class="hero" tabindex="-1">
-        <h1 class="project-title-1">Projekt 1</h1>
-        <p class="lede project-pending">Opis projektu w przygotowaniu.</p>
-        <a class="project-back" href="../index.html#projects-h">Wróć do projektów</a>
-      </main>
-    </div>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section
+        class="kobalt-section kobalt-hero"
+        aria-labelledby="kobalt-title"
+      >
+        <div class="page">
+          <div class="kobalt-hero-grid">
+            <div class="kobalt-intro">
+              <h1 id="kobalt-title">Kobalt</h1>
+              <p class="kobalt-proposition">
+                <span data-kobalt="one-brand">Jedna marka.</span>
+                <span data-kobalt="two-platforms" class="kobalt-accent"
+                  >Dwie platformy.</span
+                >
+              </p>
+              <p data-kobalt="intro" class="kobalt-lead">
+                Na przykładzie rejestracji i logowania pokazuję, jak połączyłem wspólną
+                paletę marki i kolory semantyczne z typografią i komponentami dopasowanymi
+                do każdej platformy. To projekt koncepcyjny.
+              </p>
+            </div>
+            <div class="kobalt-exhibit">
+              <div class="kobalt-device-pair">
+                <figure class="kobalt-device">
+                  <div
+                    role="img"
+                    aria-label="Ekran logowania iOS w trybie jasnym."
+                    data-kobalt-label="ios-mockup"
+                  >
+                    <div class="kobalt-phone is-ios is-light">
+                      <div class="kobalt-phone-screen">
+                        <div class="kobalt-status">
+                          <span>9:41</span
+                          ><span class="kobalt-status-icons"
+                            ><img
+                              src="../images/kobalt/cell-ios.svg"
+                              alt="" /><img
+                              src="../images/kobalt/wifi-ios.svg"
+                              alt="" /><img
+                              src="../images/kobalt/battery-ios.svg"
+                              alt=""
+                          /></span>
+                        </div>
+                        <div class="kobalt-phone-body">
+                          <div class="kobalt-phone-brand">
+                            <img
+                              src="../images/kobalt/brand-light.svg"
+                              alt=""
+                            />
+                            <b>kobalt</b>
+                          </div>
+                          <div class="kobalt-login">
+                            <div class="kobalt-login-intro">
+                              <strong data-kobalt="phone-welcome"
+                                >Dobrze Cię widzieć.</strong
+                              >
+                              <p data-kobalt="mockup-intro">
+                                Wpisz adres e-mail i hasło do swojego konta.
+                              </p>
+                            </div>
+
+                            <div class="kobalt-phone-field">
+                              <strong data-kobalt="email">Adres e-mail</strong>
+                              <div class="kobalt-phone-input">
+                                <span data-kobalt="phone-email-placeholder"
+                                  >np. imie@domena.pl</span
+                                >
+                              </div>
+                            </div>
+                            <div class="kobalt-phone-field">
+                              <strong data-kobalt="password">Hasło</strong>
+                              <div class="kobalt-phone-input">
+                                <span data-kobalt="phone-password-placeholder"
+                                  >Wpisz hasło</span
+                                >
+                              </div>
+                            </div>
+                            <div class="kobalt-phone-action">
+                              <span data-kobalt="phone-sign-in"
+                                >Zaloguj się</span
+                              >
+                            </div>
+                            <div class="kobalt-phone-links">
+                              <p>
+                                <span data-kobalt="phone-forgot"
+                                  >Nie pamiętasz hasła?</span
+                                >
+                                <b data-kobalt="phone-reset">Zresetuj hasło</b>
+                              </p>
+                              <p>
+                                <span data-kobalt="phone-no-account"
+                                  >Nie masz konta?</span
+                                >
+                                <b data-kobalt="phone-register"
+                                  >Zarejestruj się</b
+                                >
+                              </p>
+                            </div>
+                          </div>
+                          <p class="kobalt-phone-terms">
+                            <span data-kobalt="phone-terms"
+                              >Logując się akceptujesz</span
+                            >
+                            <b data-kobalt="phone-terms-link"
+                              >Regulamin serwisu.</b
+                            >
+                          </p>
+                        </div>
+                        <div class="kobalt-home-indicator"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>iOS / Light</figcaption>
+                </figure>
+                <figure class="kobalt-device">
+                  <div
+                    role="img"
+                    aria-label="Ekran logowania Android w trybie ciemnym."
+                    data-kobalt-label="dark-mockup"
+                  >
+                    <div class="kobalt-phone is-android is-dark">
+                      <div class="kobalt-phone-screen">
+                        <div class="kobalt-status">
+                          <span>9:30</span
+                          ><span class="kobalt-camera"
+                            ><img
+                              src="../images/kobalt/camera-dark.svg"
+                              alt="" /></span
+                          ><span class="kobalt-status-icons"
+                            ><img
+                              src="../images/kobalt/wifi-dark.svg"
+                              alt="" /><img
+                              src="../images/kobalt/signal-dark.svg"
+                              alt="" /><img
+                              src="../images/kobalt/battery-dark.svg"
+                              alt=""
+                          /></span>
+                        </div>
+                        <div class="kobalt-phone-body">
+                          <div class="kobalt-phone-brand">
+                            <img src="../images/kobalt/brand-dark.svg" alt="" />
+                            <b>kobalt</b>
+                          </div>
+                          <div class="kobalt-login">
+                            <div class="kobalt-login-intro">
+                              <strong data-kobalt="phone-welcome"
+                                >Dobrze Cię widzieć.</strong
+                              >
+                              <p data-kobalt="mockup-intro">
+                                Wpisz adres e-mail i hasło do swojego konta.
+                              </p>
+                            </div>
+
+                            <div class="kobalt-phone-field">
+                              <strong data-kobalt="email">Adres e-mail</strong>
+                              <div class="kobalt-phone-input">
+                                <span data-kobalt="phone-email-placeholder"
+                                  >np. imie@domena.pl</span
+                                >
+                              </div>
+                            </div>
+                            <div class="kobalt-phone-field">
+                              <strong data-kobalt="password">Hasło</strong>
+                              <div class="kobalt-phone-input">
+                                <span data-kobalt="phone-password-placeholder"
+                                  >Wpisz hasło</span
+                                >
+                              </div>
+                            </div>
+                            <div class="kobalt-phone-action">
+                              <span data-kobalt="phone-sign-in"
+                                >Zaloguj się</span
+                              >
+                            </div>
+                            <div class="kobalt-phone-links">
+                              <p>
+                                <span data-kobalt="phone-forgot"
+                                  >Nie pamiętasz hasła?</span
+                                >
+                                <b data-kobalt="phone-reset">Zresetuj hasło</b>
+                              </p>
+                              <p>
+                                <span data-kobalt="phone-no-account"
+                                  >Nie masz konta?</span
+                                >
+                                <b data-kobalt="phone-register"
+                                  >Zarejestruj się</b
+                                >
+                              </p>
+                            </div>
+                          </div>
+                          <p class="kobalt-phone-terms">
+                            <span data-kobalt="phone-terms"
+                              >Logując się akceptujesz</span
+                            >
+                            <b data-kobalt="phone-terms-link"
+                              >Regulamin serwisu.</b
+                            >
+                          </p>
+                        </div>
+                        <div class="kobalt-home-indicator"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>Android / Dark</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <dl class="kobalt-grid kobalt-meta">
+            <div>
+              <dt data-kobalt="role" class="kobalt-label">Rola</dt>
+              <dd>Product Designer</dd>
+            </div>
+            <div>
+              <dt data-kobalt="scope" class="kobalt-label">Zakres</dt>
+              <dd data-kobalt="scope-value">Design system i prototyp</dd>
+            </div>
+            <div>
+              <dt data-kobalt="platforms" class="kobalt-label">Platformy</dt>
+              <dd>iOS / Android</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <section class="kobalt-section" aria-labelledby="flow-title">
+        <div class="page">
+          <div class="kobalt-section-head">
+            <p data-kobalt="flow-label" class="kobalt-label">
+              01 / Ścieżka logowania
+            </p>
+            <h2 data-kobalt="flow-title" id="flow-title">
+              Co dzieje się, gdy logowanie się nie uda?
+            </h2>
+            <p data-kobalt="flow-body" class="kobalt-lead">
+              W prototypie Androida pokazałem formularz gotowy do wysłania,
+              logowanie w toku i ponowienie próby po odrzuceniu danych
+              logowania.
+            </p>
+          </div>
+          <div class="kobalt-grid">
+            <div class="kobalt-card kobalt-step">
+              <div>
+                <h3 data-kobalt="ready">Formularz gotowy do wysłania</h3>
+                <p data-kobalt="ready-body">
+                  Po wpisaniu adresu e-mail i hasła użytkownik może wysłać formularz.
+                </p>
+              </div>
+              <div
+                class="kobalt-preview"
+                role="img"
+                aria-label="Wypełniony formularz logowania na Androidzie."
+                data-kobalt-label="ready-mockup"
+              >
+                <div class="kobalt-phone is-android is-light is-flow">
+                  <div class="kobalt-phone-screen">
+                    <div class="kobalt-status">
+                      <span>9:30</span
+                      ><span class="kobalt-camera"
+                        ><img
+                          src="../images/kobalt/camera-light.svg"
+                          alt="" /></span
+                      ><span class="kobalt-status-icons"
+                        ><img
+                          src="../images/kobalt/wifi-light.svg"
+                          alt="" /><img
+                          src="../images/kobalt/signal-light.svg"
+                          alt="" /><img
+                          src="../images/kobalt/battery-light.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                    <div class="kobalt-phone-body">
+                      <div class="kobalt-phone-brand">
+                        <img src="../images/kobalt/brand-android.svg" alt="" />
+                        <b>kobalt</b>
+                      </div>
+                      <div class="kobalt-login">
+                        <div class="kobalt-login-intro">
+                          <strong data-kobalt="phone-welcome"
+                            >Dobrze Cię widzieć.</strong
+                          >
+                          <p data-kobalt="mockup-intro">
+                            Wpisz adres e-mail i hasło do swojego konta.
+                          </p>
+                        </div>
+
+                        <div class="kobalt-phone-field">
+                          <strong data-kobalt="email">Adres e-mail</strong>
+                          <div class="kobalt-phone-input">
+                            nazwa@example.com
+                          </div>
+                        </div>
+                        <div class="kobalt-phone-field">
+                          <strong data-kobalt="password">Hasło</strong>
+                          <div class="kobalt-phone-input">
+                            <span>••••••••••</span
+                            ><img
+                              src="../images/kobalt/eye-android.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="kobalt-phone-action">
+                          <span data-kobalt="phone-sign-in">Zaloguj się</span>
+                        </div>
+                        <div class="kobalt-phone-links">
+                          <p>
+                            <span data-kobalt="phone-forgot"
+                              >Nie pamiętasz hasła?</span
+                            >
+                            <b data-kobalt="phone-reset">Zresetuj hasło</b>
+                          </p>
+                          <p>
+                            <span data-kobalt="phone-no-account"
+                              >Nie masz konta?</span
+                            >
+                            <b data-kobalt="phone-register">Zarejestruj się</b>
+                          </p>
+                        </div>
+                      </div>
+                      <p class="kobalt-phone-terms">
+                        <span data-kobalt="phone-terms"
+                          >Logując się akceptujesz</span
+                        >
+                        <b data-kobalt="phone-terms-link">Regulamin serwisu.</b>
+                      </p>
+                    </div>
+                    <div class="kobalt-home-indicator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kobalt-card kobalt-step">
+              <div>
+                <h3 data-kobalt="loading">Logowanie w toku</h3>
+                <p data-kobalt="loading-body">
+                  Przycisk pokazuje, że aplikacja sprawdza dane logowania.
+                </p>
+              </div>
+              <div
+                class="kobalt-preview"
+                role="img"
+                aria-label="Formularz logowania na Androidzie w stanie ładowania."
+                data-kobalt-label="loading-mockup"
+              >
+                <div class="kobalt-phone is-android is-light is-flow">
+                  <div class="kobalt-phone-screen">
+                    <div class="kobalt-status">
+                      <span>9:30</span
+                      ><span class="kobalt-camera"
+                        ><img
+                          src="../images/kobalt/camera-light.svg"
+                          alt="" /></span
+                      ><span class="kobalt-status-icons"
+                        ><img
+                          src="../images/kobalt/wifi-light.svg"
+                          alt="" /><img
+                          src="../images/kobalt/signal-light.svg"
+                          alt="" /><img
+                          src="../images/kobalt/battery-light.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                    <div class="kobalt-phone-body">
+                      <div class="kobalt-phone-brand">
+                        <img src="../images/kobalt/brand-android.svg" alt="" />
+                        <b>kobalt</b>
+                      </div>
+                      <div class="kobalt-login">
+                        <div class="kobalt-login-intro">
+                          <strong data-kobalt="phone-welcome"
+                            >Dobrze Cię widzieć.</strong
+                          >
+                          <p data-kobalt="mockup-intro">
+                            Wpisz adres e-mail i hasło do swojego konta.
+                          </p>
+                        </div>
+
+                        <div class="kobalt-phone-field">
+                          <strong data-kobalt="email">Adres e-mail</strong>
+                          <div class="kobalt-phone-input">
+                            bartosz@example.com
+                          </div>
+                        </div>
+                        <div class="kobalt-phone-field">
+                          <strong data-kobalt="password">Hasło</strong>
+                          <div class="kobalt-phone-input">
+                            <span>••••••••••</span
+                            ><img
+                              src="../images/kobalt/eye-android.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="kobalt-phone-action is-loading">
+                          <img src="../images/kobalt/loading.svg" alt="" /><span
+                            data-kobalt="phone-loading"
+                            >Logowanie...</span
+                          >
+                        </div>
+                        <div class="kobalt-phone-links">
+                          <p>
+                            <span data-kobalt="phone-forgot"
+                              >Nie pamiętasz hasła?</span
+                            >
+                            <b data-kobalt="phone-reset">Zresetuj hasło</b>
+                          </p>
+                          <p>
+                            <span data-kobalt="phone-no-account"
+                              >Nie masz konta?</span
+                            >
+                            <b data-kobalt="phone-register">Zarejestruj się</b>
+                          </p>
+                        </div>
+                      </div>
+                      <p class="kobalt-phone-terms">
+                        <span data-kobalt="phone-terms"
+                          >Logując się akceptujesz</span
+                        >
+                        <b data-kobalt="phone-terms-link">Regulamin serwisu.</b>
+                      </p>
+                    </div>
+                    <div class="kobalt-home-indicator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="kobalt-card kobalt-step">
+              <div>
+                <h3 data-kobalt="retry">Nieprawidłowe dane</h3>
+                <p data-kobalt="retry-body">
+                  Komunikat wskazuje problem z danymi. Przycisk umożliwia ponowienie próby.
+                </p>
+              </div>
+              <div
+                class="kobalt-preview"
+                role="img"
+                aria-label="Formularz na Androidzie pokazuje błąd danych logowania i opcję ponowienia."
+                data-kobalt-label="retry-mockup"
+              >
+                <div class="kobalt-phone is-android is-light is-flow">
+                  <div class="kobalt-phone-screen">
+                    <div class="kobalt-status">
+                      <span>9:30</span
+                      ><span class="kobalt-camera"
+                        ><img
+                          src="../images/kobalt/camera-light.svg"
+                          alt="" /></span
+                      ><span class="kobalt-status-icons"
+                        ><img
+                          src="../images/kobalt/wifi-light.svg"
+                          alt="" /><img
+                          src="../images/kobalt/signal-light.svg"
+                          alt="" /><img
+                          src="../images/kobalt/battery-light.svg"
+                          alt=""
+                      /></span>
+                    </div>
+                    <div class="kobalt-phone-body">
+                      <div class="kobalt-phone-brand">
+                        <img src="../images/kobalt/brand-android.svg" alt="" />
+                        <b>kobalt</b>
+                      </div>
+                      <div class="kobalt-login">
+                        <div class="kobalt-login-intro">
+                          <strong data-kobalt="phone-welcome"
+                            >Dobrze Cię widzieć.</strong
+                          >
+                          <p data-kobalt="mockup-intro">
+                            Wpisz adres e-mail i hasło do swojego konta.
+                          </p>
+                        </div>
+                        <div class="kobalt-phone-alert">
+                          <img src="../images/kobalt/alert.svg" alt="" />
+                          <div>
+                            <strong data-kobalt="phone-error"
+                              >Sprawdź dane logowania.</strong
+                            >
+                            <p data-kobalt="phone-error-body">
+                              Adres e-mail lub hasło są nieprawidłowe. Spróbuj
+                              ponownie.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="kobalt-phone-field">
+                          <strong data-kobalt="email">Adres e-mail</strong>
+                          <div class="kobalt-phone-input">
+                            bartosz@example.com
+                          </div>
+                        </div>
+                        <div class="kobalt-phone-field">
+                          <strong data-kobalt="password">Hasło</strong>
+                          <div class="kobalt-phone-input">
+                            <span>••••••••••</span
+                            ><img
+                              src="../images/kobalt/eye-android.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="kobalt-phone-action">
+                          <span data-kobalt="phone-retry"
+                            >Spróbuj ponownie</span
+                          >
+                        </div>
+                        <div class="kobalt-phone-links">
+                          <p>
+                            <span data-kobalt="phone-forgot"
+                              >Nie pamiętasz hasła?</span
+                            >
+                            <b data-kobalt="phone-reset">Zresetuj hasło</b>
+                          </p>
+                          <p>
+                            <span data-kobalt="phone-no-account"
+                              >Nie masz konta?</span
+                            >
+                            <b data-kobalt="phone-register">Zarejestruj się</b>
+                          </p>
+                        </div>
+                      </div>
+                      <p class="kobalt-phone-terms">
+                        <span data-kobalt="phone-terms"
+                          >Logując się akceptujesz</span
+                        >
+                        <b data-kobalt="phone-terms-link">Regulamin serwisu.</b>
+                      </p>
+                    </div>
+                    <div class="kobalt-home-indicator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="kobalt-section" aria-labelledby="architecture-title">
+        <div class="page">
+          <div class="kobalt-section-head">
+            <p data-kobalt="architecture-label" class="kobalt-label">
+              02 / Design system
+            </p>
+            <h2 data-kobalt="architecture-title" id="architecture-title">
+              Co współdzielą obie platformy?
+            </h2>
+            <p data-kobalt="architecture-body" class="kobalt-lead">
+              Obie platformy korzystają z tej samej palety marki i tych samych ról kolorów w
+              jasnym i ciemnym motywie. Typografię, wymiary i wygląd komponentów dopasowałem
+              osobno do platformy iOS i Android.
+            </p>
+          </div>
+          <div class="kobalt-grid">
+            <div class="kobalt-card">
+              <h3>Core</h3>
+              <p data-kobalt="core">
+                Paleta marki i kolory semantyczne dla obu motywów.
+              </p>
+            </div>
+            <div class="kobalt-card">
+              <h3>iOS</h3>
+              <p data-kobalt="ios">
+                Typografia i komponenty dopasowane do iOS.
+              </p>
+            </div>
+            <div class="kobalt-card">
+              <h3>Android</h3>
+              <p data-kobalt="android">
+                Typografia i komponenty dopasowane do Androida.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="kobalt-section kobalt-fields"
+        aria-labelledby="fields-title"
+      >
+        <div class="page">
+          <div class="kobalt-section-head">
+            <p data-kobalt="fields-label" class="kobalt-label">
+              03 / Decyzja projektowa
+            </p>
+            <h2 data-kobalt="fields-title" id="fields-title">
+              Spójność we wszystkich formularzach
+            </h2>
+            <p data-kobalt="fields-body" class="kobalt-lead">
+              W każdym formularzu Kobalt użytkownik rozpoznaje aktywne pole po wyróżnionym
+              obramowaniu. Ta sama reguła dotyczy logowania, resetowania hasła i planowanej
+              rejestracji.
+            </p>
+          </div>
+          <div class="kobalt-grid kobalt-grid-pair">
+            <div class="kobalt-card">
+              <p data-kobalt="source" class="kobalt-label">
+                iOS / Komponenty źródłowe
+              </p>
+              <div class="kobalt-field">
+                <label data-kobalt="email" for="kobalt-email"
+                  >Adres e-mail</label
+                >
+                <input
+                  id="kobalt-email"
+                  type="email"
+                  value="nazwa@example.com"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="kobalt-field">
+                <label data-kobalt="password" for="kobalt-password"
+                  >Hasło</label
+                >
+                <div class="kobalt-password">
+                  <input
+                    id="kobalt-password"
+                    type="password"
+                    value="kobaltdemo"
+                    autocomplete="off"
+                  />
+                  <button
+                    id="kobalt-password-toggle"
+                    type="button"
+                    aria-controls="kobalt-password"
+                    aria-pressed="false"
+                    aria-label="Pokaż hasło"
+                    data-kobalt-label="show-password"
+                  >
+                    <img src="../images/kobalt/eye-ios.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="kobalt-card">
+              <div class="kobalt-token">
+                <h3 data-kobalt="shared-color">Wspólny token koloru fokusu</h3>
+                <code>text_field/border/focus</code>
+                <p data-kobalt="shared-color-body">
+                  W tym przykładzie token określa kolor obramowania aktywnego pola
+                  formularza.
+                </p>
+              </div>
+              <div class="kobalt-token">
+                <h3 data-kobalt="focus-rule">Zasada dla całego projektu</h3>
+                <p data-kobalt="focus-rule-detail" class="kobalt-token-detail">Spójny sygnał w Light i Dark</p>
+                <p data-kobalt="focus-rule-body">
+                  W obrębie danego motywu wszystkie formularze używają tego samego koloru
+                  fokusu pól. Wartości dla Light i Dark są dobierane w zależności od tego,
+                  jaki motyw użytkownik zastosuje.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="kobalt-section kobalt-closing"
+        aria-labelledby="summary-title"
+      >
+        <div class="page">
+          <div class="kobalt-section-head">
+            <p data-kobalt="summary-label" class="kobalt-label">
+              04 / Podsumowanie
+            </p>
+            <h2 data-kobalt="summary-title" id="summary-title">
+              Od formularza logowania i rejestracji do design systemu.
+            </h2>
+            <p data-kobalt="summary-body" class="kobalt-lead">
+              W Kobalt zaprojektowałem logowanie i rejestrację do aplikacji na platformy iOS
+              i Android. Obie wersje korzystają ze wspólnych ról kolorów w jasnym i ciemnym
+              motywie, a typografię i komponenty formularza dopasowałem osobno do każdej
+              platformy.
+            </p>
+          </div>
+          <a
+            class="kobalt-cta"
+            href="https://www.figma.com/design/ECLMVB6uMVv0L4LOsrVxcN/DS-koncept?node-id=11-91"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span data-kobalt="figma">Zobacz projekt w Figmie</span>
+            <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="kobalt-footer">
+      <div class="page">
+        <a class="kobalt-back" href="../index.html">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.75"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 12H5m7-7-7 7 7 7" />
+          </svg>
+          <span data-kobalt="back">Powrót do strony głównej</span>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -17,6 +17,8 @@
     <link rel="preload" href="fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/translations.js" defer></script>
+    <link rel="stylesheet" href="css/kobalt.css" />
+    <script src="js/kobalt-translations.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
 
@@ -53,10 +55,7 @@
         </div>
 
         <section class="section" aria-labelledby="skills-h">
-          <div class="section-head section-head-stacked">
-            <span class="eyebrow skills-eyebrow">Kompetencje</span>
-            <h2 id="skills-h">Moje kompetencje</h2>
-          </div>
+          <h2 id="skills-h" class="section-head">Moje kompetencje</h2>
           <ul class="skills-list">
             <li class="skill-item">
               <svg class="skill-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="14" height="12" rx="2"/><path d="M6 20h6M9 16v4M2 8h14"/><rect x="16" y="10" width="6" height="11" rx="1.5"/></svg>
@@ -104,32 +103,86 @@
         </section>
 
         <section class="section" aria-labelledby="projects-h">
-          <div class="section-head section-head-stacked">
-            <span class="eyebrow projects-eyebrow">Projekty</span>
-            <h2 id="projects-h">Przykładowe projekty</h2>
-          </div>
+          <h2 id="projects-h" class="section-head">Przykładowe projekty</h2>
           <ul class="skills-list projects-list">
             <li class="project-item">
-              <a class="skill-item project-card" data-analytics-event="project_1_click" href="projects/project-1.html" target="_blank" rel="noopener noreferrer">
-                <img class="project-image" src="images/project-placeholder.svg" width="640" height="400" alt="" loading="lazy" />
-                <div class="project-caption">
-                  <h3 class="project-title-1">Projekt 1</h3>
+              <a class="skill-item project-card" data-analytics-event="project_1_click" href="projects/project-1.html">
+                <div class="project-image kobalt-cover" aria-hidden="true">
+                  <div class="kobalt-cover-copy">
+                    <p><span data-kobalt="cover-label">PRODUCT DESIGN / CASE STUDY</span></p>
+                    <p class="kobalt-cover-name">Kobalt</p>
+                    <p class="kobalt-cover-proposition">
+                      <span data-kobalt="one-brand">Jedna marka.</span>
+                      <span data-kobalt="two-platforms" class="kobalt-accent"
+                        >Dwie platformy.</span
+                      >
+                    </p>
+                  </div>
+                  <div class="kobalt-cover-art">
+                    <div class="kobalt-phone is-ios is-dark">
+                      <div class="kobalt-phone-screen">
+                        <div class="kobalt-status">
+                          <span>9:41</span
+                          ><span class="kobalt-status-icons"
+                            ><img src="images/kobalt/cover-cell.svg" alt="" /><img
+                              src="images/kobalt/cover-wifi.svg"
+                              alt="" /><img src="images/kobalt/cover-battery.svg" alt=""
+                          /></span>
+                        </div>
+                        <div class="kobalt-phone-body">
+                          <div class="kobalt-phone-brand">
+                            <img src="images/kobalt/cover-brand.svg" alt="" /> <b>kobalt</b>
+                          </div>
+                          <div class="kobalt-login">
+                            <div class="kobalt-login-intro">
+                              <strong data-kobalt="phone-welcome">Dobrze Cię widzieć.</strong>
+                              <p data-kobalt="phone-intro">
+                                Zaloguj się i kontynuuj swoją naukę.
+                              </p>
+                            </div>
+                
+                            <div class="kobalt-phone-field">
+                              <strong data-kobalt="email">Adres e-mail</strong>
+                              <div class="kobalt-phone-input">
+                                <span data-kobalt="phone-email-placeholder"
+                                  >np. imie@domena.pl</span
+                                >
+                              </div>
+                            </div>
+                            <div class="kobalt-phone-field">
+                              <strong data-kobalt="password">Hasło</strong>
+                              <div class="kobalt-phone-input">
+                                <span data-kobalt="phone-password-placeholder"
+                                  >Wpisz hasło</span
+                                >
+                              </div>
+                            </div>
+                            <div class="kobalt-phone-action">
+                              <span data-kobalt="phone-sign-in">Zaloguj się</span>
+                            </div>
+                            <div class="kobalt-phone-links">
+                              <p>
+                                <span data-kobalt="phone-no-account">Nie masz konta?</span>
+                                <b data-kobalt="phone-register">Zarejestruj się</b>
+                              </p>
+                              <p>
+                                <span data-kobalt="phone-forgot">Nie pamiętasz hasła?</span>
+                                <b data-kobalt="phone-reset">Zresetuj hasło</b>
+                              </p>
+                            </div>
+                          </div>
+                          <p class="kobalt-phone-terms">
+                            <span data-kobalt="phone-terms">Logując się akceptujesz</span>
+                            <b data-kobalt="phone-terms-link">Regulamin serwisu.</b>
+                          </p>
+                        </div>
+                        <div class="kobalt-home-indicator"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </a>
-            </li>
-            <li class="project-item">
-              <a class="skill-item project-card" data-analytics-event="project_2_click" href="projects/project-2.html" target="_blank" rel="noopener noreferrer">
-                <img class="project-image" src="images/project-placeholder.svg" width="640" height="400" alt="" loading="lazy" />
                 <div class="project-caption">
-                  <h3 class="project-title-2">Projekt 2</h3>
-                </div>
-              </a>
-            </li>
-            <li class="project-item">
-              <a class="skill-item project-card" data-analytics-event="project_3_click" href="projects/project-3.html" target="_blank" rel="noopener noreferrer">
-                <img class="project-image" src="images/project-placeholder.svg" width="640" height="400" alt="" loading="lazy" />
-                <div class="project-caption">
-                  <h3 class="project-title-3">Projekt 3</h3>
+                  <h3 class="project-title-1">Kobalt - Jedna marka. Dwie platformy.</h3>
                 </div>
               </a>
             </li>
@@ -137,10 +190,7 @@
         </section>
 
         <section class="section" aria-labelledby="contact-h">
-          <div class="section-head section-head-stacked">
-            <span class="eyebrow">Kontakt</span>
-            <h2 id="contact-h">Znajdziesz mnie tutaj</h2>
-          </div>
+          <h2 id="contact-h" class="section-head">Znajdziesz mnie tutaj</h2>
           <div id="links">
             <ul class="links-list">
               <li>

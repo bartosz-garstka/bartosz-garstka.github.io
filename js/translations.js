@@ -30,10 +30,6 @@ const TRANSLATIONS = {
     "pl": "Projektuję responsywne serwisy internetowe i aplikacje mobilne, łącząc perspektywę użytkownika z wymaganiami biznesowymi i technicznymi. Mam doświadczenie w e-commerce, rozwijaniu funkcjonalności od discovery po wdrożenie oraz budowie design systemów i tokenów projektowych. Współpracuję z deweloperami i menedżerami produktu, dbając o użyteczność, spójność i dostępność interfejsów.",
     "en": "I design responsive websites and mobile apps, combining a user perspective with business and technical requirements. My experience includes e-commerce, developing features from discovery through implementation, and building design systems and design tokens. I collaborate with developers and product managers, focusing on usability, consistency and accessibility."
   },
-  ".skills-eyebrow": {
-    "pl": "Kompetencje",
-    "en": "Skills"
-  },
   "#skills-h": {
     "pl": "Moje kompetencje",
     "en": "My skills"
@@ -86,25 +82,13 @@ const TRANSLATIONS = {
     "pl": "Znajomość zasad WCAG i ich zastosowania w projektowaniu interfejsów, m.in. w zakresie kontrastu, czytelności, nawigacji i stanów komponentów.",
     "en": "Knowledge of WCAG principles and their application to interface design, including contrast, readability, navigation and component states."
   },
-  ".projects-eyebrow": {
-    "pl": "Projekty",
-    "en": "Projects"
-  },
   "#projects-h": {
     "pl": "Przykładowe projekty",
     "en": "Selected projects"
   },
-  ".project-title-1": { "pl": "Projekt 1", "en": "Project 1" },
-  ".project-title-2": { "pl": "Projekt 2", "en": "Project 2" },
-  ".project-title-3": { "pl": "Projekt 3", "en": "Project 3" },
-  "[aria-labelledby='contact-h'] .section-head .eyebrow": {
-    "pl": "Kontakt",
-    "en": "Contact"
-  },
+  ".project-title-1": { "pl": "Kobalt - Jedna marka. Dwie platformy.", "en": "Kobalt - One brand. Two platforms." },
   "#contact-h": {
     "pl": "Znajdziesz mnie tutaj",
     "en": "Find me online"
-  },
-  ".project-pending": { "pl": "Opis projektu w przygotowaniu.", "en": "Project description coming soon." },
-  ".project-back": { "pl": "Wróć do projektów", "en": "Back to projects" }
+  }
 };

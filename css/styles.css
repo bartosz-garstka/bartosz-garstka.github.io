@@ -193,12 +193,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .section-head {
-  display: grid;
-  gap: 8px;
   margin-bottom: 24px;
-}
-
-.section-head h2 {
   font-family: var(--font-display);
   font-weight: 500;
   font-size: clamp(1.6rem, 4vw, 2.25rem);
@@ -285,10 +280,6 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ---------- Skills: outlined cards and accent icons ---------- */
-.section-head.section-head-stacked {
-  grid-template-columns: minmax(0, 1fr);
-  gap: 8px;
-}
 .skills-list {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -325,7 +316,17 @@ a:focus-visible, button:focus-visible {
 .skill-copy p { margin-top: 10px; font-size: 16px; line-height: 1.6; color: var(--muted); }
 
 /* ---------- Projects ---------- */
+/* Keep the grid tracks the same size and close the border around each card. */
+.projects-list { border-color: transparent; }
 .project-item { position: relative; display: flex; min-width: 0; }
+.project-item::after {
+  content: "";
+  position: absolute;
+  inset: 0 -1px -1px 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  pointer-events: none;
+}
 /* Draw the focused card above its neighbours so its outline stays visible. */
 .project-item:focus-within { z-index: 1; }
 .project-card { width: 100%; color: inherit; text-decoration: none; }
@@ -366,7 +367,7 @@ a:focus-visible, button:focus-visible {
 /* ---------- Responsive ---------- */
 @media (max-width: 719px) {
   .skill-copy h3, .project-caption h3 { font-size: 18px; }
-  .section-head h2 { font-size: 24px; }
+  .section-head { font-size: 24px; }
   .hero h1 { font-size: 32px; }
   .lede { font-size: 16px; }
   #main, #hero, #projects-h, #contact-h { scroll-margin-top: 180px; }
@@ -405,16 +406,11 @@ a:focus-visible, button:focus-visible {
 @media (min-width: 720px) {
   :root { --gutter: 24px; }
   .skills-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .section-head {
-    grid-template-columns: 200px 1fr;
-    gap: 24px;
-    align-items: baseline;
-  }
 }
 
 @media (min-width: 1024px) {
   .dim { font-size: 16px; }
-  .section-head h2 { font-size: 28px; }
+  .section-head { font-size: 28px; }
   :root { --gutter: 32px; --section-space: 48px; --card-padding: 24px; }
   .hero { padding-block: 48px 56px; }
   .skills-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }

@@ -4,7 +4,11 @@ const copyrightYear = document.getElementById("copyright-year");
 if (copyrightYear) copyrightYear.textContent = String(new Date().getFullYear());
 
 // Bind the dictionary to text elements on the current page.
-const translatedElements = Object.entries(TRANSLATIONS).flatMap(([selector, translations]) =>
+const dictionaries = {
+  ...(typeof TRANSLATIONS === "undefined" ? {} : TRANSLATIONS),
+  ...(typeof KOBALT_TRANSLATIONS === "undefined" ? {} : KOBALT_TRANSLATIONS)
+};
+const translatedElements = Object.entries(dictionaries).flatMap(([selector, translations]) =>
   Array.from(document.querySelectorAll(selector), (element) => ({ element, translations }))
 );
 // Cache metadata and titles before the initial language is applied.
@@ -27,6 +31,7 @@ function setLanguage(language) {
   for (const { element, property, pl, en } of translatedMetadata) {
     element[property] = lang === "pl" ? pl : en;
   }
+  if (typeof translateKobaltAttributes === "function") translateKobaltAttributes(lang);
   if (navigation) navigation.setAttribute("aria-label", lang === "pl" ? "Nawigacja główna" : "Main navigation");
   if (switcher) {
     switcher.setAttribute("aria-label", lang === "pl" ? "Język strony" : "Page language");

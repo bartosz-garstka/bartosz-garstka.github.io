@@ -1,0 +1,384 @@
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/inter-400.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/inter-500.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/inter-600.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/inter-700.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+.kobalt-page, .kobalt-cover {
+  --kobalt-dark: #101524;
+  --kobalt-canvas: #f6f7fb;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.kobalt-page {
+  --kobalt-space: 32px;
+  --kobalt-gap: 16px;
+  --kobalt-card-padding: 16px;
+  --kobalt-section-gap: 16px;
+  --kobalt-heading-gap: 8px;
+  --kobalt-title: 24px/28px;
+  --kobalt-lead: 16px/24px;
+  --kobalt-label: 12px/14px;
+  --kobalt-copy: 14px/20px;
+  line-height: 1.5;
+}
+
+.kobalt-page main {
+  --kobalt-ink: #17223b;
+  --kobalt-muted: #475467;
+  --kobalt-brand: #3454d1;
+  --kobalt-periwinkle: #adbbff;
+  --kobalt-subtle: #eef2ff;
+  --kobalt-border: #dee3f0;
+  color-scheme: light;
+  color: var(--kobalt-ink);
+  background: white;
+}
+
+.kobalt-page main :is(a, button, input):focus-visible { outline: 2px solid var(--kobalt-brand); }
+.kobalt-page .kobalt-closing a:focus-visible { outline-color: var(--kobalt-periwinkle); }
+
+.kobalt-header { border-bottom: 1px solid var(--line); }
+.kobalt-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding-block: 12px;
+}
+.kobalt-nav .header-logo { margin-inline-end: auto; text-decoration: none; }
+.kobalt-back, .kobalt-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+.kobalt-footer { padding-block: 24px 32px; border-top: 1px solid var(--line); }
+.kobalt-back {
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.kobalt-back:hover { border-color: var(--accent); background: var(--accent-soft); }
+.kobalt-back svg { flex: none; }
+
+.kobalt-section { padding-block: var(--kobalt-space); }
+.kobalt-hero, .kobalt-fields { background: var(--kobalt-canvas); }
+.kobalt-hero-grid { display: grid; align-items: center; gap: 16px; }
+.kobalt-intro { display: grid; gap: 8px; }
+.kobalt-intro h1 { font-size: 36px; line-height: 44px; letter-spacing: -0.05em; }
+.kobalt-proposition { font-size: 24px; line-height: 28px; font-weight: 600; letter-spacing: -0.03em; }
+.kobalt-page .kobalt-accent { color: var(--kobalt-brand); }
+.kobalt-lead { color: var(--kobalt-muted); font: var(--kobalt-lead) Inter, system-ui, sans-serif; }
+
+.kobalt-exhibit {
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--kobalt-dark);
+  color: #ccd9ff;
+}
+.kobalt-label {
+  font: 700 var(--kobalt-label) Inter, system-ui, sans-serif;
+  letter-spacing: 0.1em;
+}
+.kobalt-device-pair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 16px;
+}
+.kobalt-device { width: min(100%, 140px); margin: 0; padding-block: 6px; text-align: center; }
+.kobalt-device figcaption { margin-top: 16px; font: 600 var(--kobalt-label) Inter, system-ui, sans-serif; }
+
+.kobalt-grid { display: grid; gap: var(--kobalt-gap); }
+.kobalt-meta { margin: 16px 0 0; }
+.kobalt-meta > div, .kobalt-card {
+  padding: var(--kobalt-card-padding);
+  border: 1px solid var(--kobalt-border);
+  border-radius: 16px;
+  min-width: 0;
+}
+.kobalt-meta > div, .kobalt-fields .kobalt-card { background: white; }
+.kobalt-meta dd { margin: 4px 0 0; font-weight: 600; font-size: 20px; line-height: 24px; }
+.kobalt-label { color: var(--kobalt-brand); text-transform: uppercase; }
+.kobalt-section-head { max-width: 748px; margin-bottom: var(--kobalt-section-gap); }
+.kobalt-section-head h2 { margin: var(--kobalt-heading-gap) 0; font: 600 var(--kobalt-title) Inter, system-ui, sans-serif; letter-spacing: -0.03em; }
+.kobalt-card { background: var(--kobalt-canvas); }
+.kobalt-card h3 { font-size: 20px; line-height: 24px; font-weight: 600; }
+.kobalt-card > p:not(.kobalt-label), .kobalt-token > p, .kobalt-step > div:first-child > p {
+  color: var(--kobalt-muted);
+  font: var(--kobalt-copy) Inter, system-ui, sans-serif;
+}
+.kobalt-card h3 + p { margin-top: 8px; }
+.kobalt-token h3 + .kobalt-token-detail { margin-top: 8px; }
+.kobalt-field { display: grid; gap: 4px; margin-top: 16px; width: min(100%, 280px); max-width: 300px; font-size: 14px; line-height: 18px; }
+.kobalt-field label { font-weight: 600; }
+.kobalt-field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 12px;
+  border: 2px solid var(--kobalt-brand);
+  border-radius: 12px;
+  color: var(--kobalt-ink);
+  background: white;
+  font: inherit;
+}
+.kobalt-field input:focus-visible { outline-offset: 2px; }
+.kobalt-password { position: relative; }
+.kobalt-password input { padding-inline-end: 52px; }
+.kobalt-password button {
+  position: absolute;
+  inset: 5px 4px 5px auto;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+}
+.kobalt-password button:hover, .kobalt-password button[aria-pressed="true"] { background: var(--kobalt-subtle); }
+.kobalt-token + .kobalt-token { border-top: 1px solid var(--kobalt-border); margin-top: 16px; padding-top: 16px; }
+.kobalt-token :is(code, .kobalt-token-detail) { display: block; margin-block: 8px; font: 600 var(--kobalt-label) Inter, sans-serif; overflow-wrap: anywhere; color: var(--kobalt-brand); }
+.kobalt-step { display: flex; flex-direction: column; gap: 16px; }
+.kobalt-preview {
+  display: grid;
+  justify-items: center;
+  margin-top: auto;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--kobalt-subtle);
+}
+.kobalt-preview .kobalt-phone { width: min(100%, 160px); }
+.kobalt-closing { background: var(--kobalt-dark); color: #f3f5fc; }
+.kobalt-closing .kobalt-label { color: #ccd9ff; }
+.kobalt-closing .kobalt-lead { color: #b7c2d9; }
+.kobalt-closing .kobalt-section-head { max-width: none; }
+.kobalt-cta { padding: 16px; border-radius: 10px; font-size: 18px; line-height: 24px; background: var(--kobalt-periwinkle); color: #12172b; }
+.kobalt-cta:hover { background: #d4dcff; }
+
+/* Phone illustrations use a local scale for the type and the original Figma icons. */
+.kobalt-phone {
+  container-type: inline-size;
+  background: #26304d;
+  border-radius: 8.5%;
+  padding: 2.7%;
+  text-align: left;
+}
+.kobalt-page .kobalt-phone {
+  --phone-radius: 10px;
+  --phone-aspect: 140 / 303;
+  display: grid;
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+  aspect-ratio: var(--phone-aspect);
+  padding: 6px;
+  border-radius: var(--phone-radius);
+}
+.kobalt-page .kobalt-phone.is-flow {
+  --phone-radius: 16px;
+  --phone-aspect: 160 / 356;
+  background: var(--kobalt-dark);
+}
+.kobalt-phone-screen {
+  --screen-ink: #17223b;
+  --screen-muted: #475467;
+  --screen-panel: #fff;
+  --screen-edge: #65738f;
+  --screen-action: #3454d1;
+  --screen-on-action: #fff;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 174 / 386.667;
+  overflow: hidden;
+  border-radius: 6cqi;
+  background: var(--kobalt-canvas);
+  color: var(--screen-ink);
+  font: 500 4cqi/1.4 Inter, sans-serif;
+}
+.kobalt-page .kobalt-phone-screen {
+  border-radius: calc(var(--phone-radius) - 6px);
+}
+.is-ios .kobalt-phone-screen { aspect-ratio: 174 / 376.55; }
+.kobalt-page .kobalt-phone .kobalt-phone-screen { aspect-ratio: auto; }
+.is-dark .kobalt-phone-screen {
+  --screen-ink: #f3f5fc;
+  --screen-muted: #b7c2d9;
+  --screen-panel: #1a2235;
+  --screen-edge: #8190ab;
+  --screen-action: #adbbff;
+  --screen-on-action: #12172b;
+  background: #0f1422;
+}
+.kobalt-status {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 14cqi;
+  padding-inline: 6cqi;
+  font-size: 4.45cqi;
+  font-weight: 600;
+}
+.is-ios .kobalt-status { padding-inline: 15cqi 10cqi; }
+.kobalt-status-icons { display: flex; align-items: center; gap: 1.5cqi; }
+.kobalt-status-icons img { max-height: 4.5cqi; max-width: 8cqi; object-fit: contain; }
+.kobalt-camera { position: absolute; left: 50%; transform: translateX(-50%); }
+.kobalt-camera img { display: block; max-width: 6.5cqi; }
+.kobalt-phone-body { display: flex; flex: 1; flex-direction: column; padding: 2cqi 4.4cqi; }
+.kobalt-phone-brand { display: flex; align-items: center; gap: 3cqi; padding-block: 2cqi 5cqi; color: var(--screen-action); font-size: 6.5cqi; }
+.kobalt-phone-brand img { max-width: 9cqi; }
+.kobalt-login { display: grid; gap: 5cqi; border-radius: 4.5cqi; padding: 4.4cqi; background: var(--screen-panel); }
+.kobalt-login-intro strong { display: block; margin-bottom: 1.8cqi; font-size: 5.95cqi; line-height: 1.3; }
+.kobalt-login-intro p { color: var(--screen-muted); font-size: 3.8cqi; }
+.kobalt-phone-field { display: grid; gap: 1.2cqi; min-width: 0; font-size: 4.35cqi; }
+.kobalt-phone-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2cqi;
+  min-height: 15.6cqi;
+  padding: 3.8cqi;
+  border: 1px solid var(--screen-edge);
+  border-radius: 3.2cqi;
+  color: var(--screen-muted);
+  font-size: 4.55cqi;
+}
+.kobalt-phone-input span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.kobalt-phone-input img { max-width: 6.7cqi; }
+.kobalt-phone-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2cqi;
+  min-height: 15.5cqi;
+  padding: 2cqi;
+  border-radius: 3.3cqi;
+  background: var(--screen-action);
+  color: var(--screen-on-action);
+  font-size: 4.8cqi;
+  font-weight: 600;
+}
+.is-android .kobalt-phone-action { border-radius: 100px; }
+.kobalt-phone-action.is-loading { opacity: 0.82; }
+.kobalt-phone-action img { max-width: 5.6cqi; }
+.kobalt-phone-links { display: grid; gap: 4.5cqi; color: var(--screen-muted); font-size: 4.15cqi; }
+.kobalt-phone-links b, .kobalt-phone-terms b { color: var(--screen-action); font-weight: 600; }
+.kobalt-phone-terms { margin-top: auto; padding-block: 3cqi 2cqi; color: var(--screen-muted); font-size: 3.65cqi; }
+.kobalt-home-indicator { width: 38cqi; height: 1.3cqi; margin: 3cqi auto; border-radius: 100px; background: var(--screen-ink); }
+.is-flow .kobalt-phone-input, .is-flow .kobalt-phone-action { min-height: 13.5cqi; }
+.is-flow .kobalt-login { gap: 4cqi; }
+.kobalt-phone-alert { display: flex; align-items: start; gap: 2cqi; padding: 3cqi; border-radius: 2cqi; background: #fff0ed; color: #912018; }
+.kobalt-phone-alert img { max-width: 6.7cqi; }
+
+.kobalt-cover {
+  display: grid;
+  grid-template-columns: 354fr 286fr;
+  grid-template-rows: minmax(0, 1fr);
+  container-type: inline-size;
+  overflow: hidden;
+  background: #eef2ff;
+  color: #17223b;
+}
+.kobalt-cover-copy { padding: 10cqi 2.5cqi 4.7cqi 5cqi; font-size: 1.875cqi; line-height: 1.35; font-weight: 500; }
+.kobalt-cover-name { margin-top: 2.5cqi; font-size: 6.25cqi; line-height: 1.2; font-weight: 700; letter-spacing: -0.05em; }
+.kobalt-cover-proposition { margin-top: 3.75cqi; font-size: 4.375cqi; line-height: 1.29; font-weight: 600; letter-spacing: -0.03em; }
+.kobalt-cover-proposition span { display: block; }
+.kobalt-cover .kobalt-accent { color: #3454d1; }
+.kobalt-cover-art { min-width: 0; overflow: hidden; padding-top: 8.9cqi; background: var(--kobalt-dark); }
+.kobalt-cover-art .kobalt-phone { width: 82%; margin-inline: auto; padding: 2.4%; }
+
+.kobalt-page .kobalt-status { flex: none; }
+.kobalt-page .kobalt-phone-body { padding: 0 4.8cqi; }
+.kobalt-page .kobalt-phone-brand { gap: 3.6cqi; padding-block: 2.4cqi 7.2cqi; }
+.kobalt-page .kobalt-login { gap: 5cqi; padding: 4.8cqi; }
+.kobalt-page .kobalt-login-intro strong { font-size: 5.8cqi; }
+.kobalt-page .kobalt-phone-input { min-height: 16cqi; padding: 3.5cqi 4.8cqi; }
+.kobalt-page .is-android .kobalt-phone-input { border-radius: 1.3cqi; }
+.kobalt-page .kobalt-phone-links { gap: 2cqi; }
+.kobalt-page .is-android .kobalt-home-indicator { width: 30cqi; }
+
+@media (min-width: 720px) {
+  .kobalt-page {
+    --kobalt-space: 40px;
+    --kobalt-section-gap: 24px;
+    --kobalt-title: 28px/34px;
+    --kobalt-lead: 18px/24px;
+    --kobalt-label: 14px/18px;
+  }
+  .kobalt-intro { gap: 12px; }
+  .kobalt-intro h1 { font-size: 40px; line-height: 48px; }
+  .kobalt-proposition { font-size: 28px; line-height: 34px; }
+  .kobalt-hero-grid { gap: 32px; }
+  .kobalt-meta { margin-top: 24px; }
+  .kobalt-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .kobalt-grid-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kobalt-device-pair { gap: 24px; }
+  .kobalt-device { width: min(100%, 172px); }
+  .kobalt-device > div { width: min(100%, 160px); margin-inline: auto; }
+  .kobalt-exhibit { padding: 20px; border-radius: 20px; }
+  .kobalt-field { font-size: 16px; line-height: 20px; }
+  .kobalt-field input { min-height: 56px; padding-inline: 16px; }
+  .kobalt-preview .kobalt-phone { width: min(100%, 124px); }
+  .kobalt-page .kobalt-phone { --phone-aspect: 160 / 356; --phone-radius: 12px; }
+  .kobalt-page .kobalt-phone.is-flow {
+    --phone-aspect: 124 / 276;
+    --phone-radius: 12px;
+    background: #26304d;
+  }
+}
+
+@media (min-width: 1200px) {
+  .kobalt-page {
+    --kobalt-space: 64px;
+    --kobalt-heading-gap: 12px;
+    --kobalt-gap: 24px;
+    --kobalt-card-padding: 24px;
+    --kobalt-title: 32px/38px;
+    --kobalt-lead: 20px/30px;
+    --kobalt-label: 16px/20px;
+    --kobalt-copy: 16px/22px;
+  }
+  .kobalt-hero-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+  .kobalt-intro { gap: 16px; }
+  .kobalt-intro h1 { font-size: 56px; line-height: 68px; }
+  .kobalt-proposition { font-size: 32px; line-height: 38px; }
+  .kobalt-closing .kobalt-section-head { margin-bottom: 32px; }
+  .kobalt-meta { margin-top: 32px; }
+  .kobalt-exhibit { padding: 24px; border-radius: 24px; }
+  .kobalt-device figcaption { margin-top: 24px; }
+  .kobalt-preview { padding: 24px; border-radius: 16px; }
+  .kobalt-preview .kobalt-phone { width: min(100%, 160px); }
+  .kobalt-page .kobalt-phone.is-flow {
+    --phone-aspect: 160 / 356;
+    --phone-radius: 16px;
+    background: var(--kobalt-dark);
+  }
+}
