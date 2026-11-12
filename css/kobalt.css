@@ -60,7 +60,10 @@
 .kobalt-page main :is(a, button, input):focus-visible { outline: 2px solid var(--kobalt-brand); }
 .kobalt-page .kobalt-closing a:focus-visible { outline-color: var(--kobalt-periwinkle); }
 
-.kobalt-header { border-bottom: 1px solid var(--line); }
+.kobalt-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+}
 .kobalt-nav {
   display: flex;
   align-items: center;

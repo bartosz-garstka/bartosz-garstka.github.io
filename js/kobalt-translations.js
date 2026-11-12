@@ -5,7 +5,7 @@ const KOBALT_TRANSLATIONS = Object.fromEntries(
     "skip": { "pl": "Przejdź do treści", "en": "Skip to content" },
     "one-brand": { "pl": "Jedna marka.", "en": "One brand." },
     "two-platforms": { "pl": "Dwie platformy.", "en": "Two platforms." },
-    "intro": { "pl": "Na przykładzie rejestracji i logowania pokazuję, jak połączyłem wspólną paletę marki i kolory semantyczne z typografią i komponentami dopasowanymi do każdej platformy. To projekt koncepcyjny.", "en": "Using sign-up and login as examples, I show how I combined a shared brand palette and semantic colors with typography and components tailored to each platform. This is a concept project." },
+    "intro": { "pl": "Na przykładzie rejestracji i logowania pokazuję, jak połączyłem wspólną paletę marki i kolory semantyczne z typografią i komponentami dopasowanymi do każdej platformy.", "en": "Using sign-up and login as examples, I show how I combined a shared brand palette and semantic colors with typography and components tailored to each platform." },
     "phone-welcome": { "pl": "Dobrze Cię widzieć.", "en": "Good to see you." },
     "phone-intro": { "pl": "Zaloguj się i kontynuuj swoją naukę.", "en": "Log in to keep learning." },
     "email": { "pl": "Adres e-mail", "en": "Email address" },

@@ -170,10 +170,13 @@ a:focus-visible, button:focus-visible {
   padding-inline: var(--gutter);
 }
 
-.topbar {
+.topbar, .kobalt-header {
   position: sticky;
   top: 0;
   z-index: 20;
+}
+
+.topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
